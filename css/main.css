@@ -36,6 +36,7 @@ hr {
 
 img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 fieldset {
@@ -386,14 +387,61 @@ textarea {
    
    /* @end */
    
+body {
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	font: 15px/20px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}  
+
+
+.constrain {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+} 
+   
+#global-nav {
+	background: url(../images/jq-global-nav.png) repeat-x 0 bottom;
+}   
    
    
+#global-project-select {
+	background: url(../images/bg-top.jpg) repeat;
+}   
    
-   
-   
-   
-   
-   
+#global-project-select ul {
+	margin: 0;
+	padding: 0;
+}   
+
+#global-project-select li {
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+	margin-left: 2%;
+}
+
+#global-project-select li:first-child {
+	margin-left: 0;
+}
+
+#global-project-select li img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 84%;
+	margin: 10px 5%;
+}
+
+#global-project-select li a em {
+	clear: both;
+	font-size: 11px;
+	color: #fff;
+	opacity: 0.25;
+	text-decoration: none;
+	text-align: center;
+	line-height: 11px;
+}
    
    
 /* ==========================================================================
