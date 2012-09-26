@@ -1,4 +1,4 @@
-jquery
+jQuery Framework/Foundation Site
 ======
 
 ##Issues I'm not sure how to solve

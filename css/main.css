@@ -404,6 +404,16 @@ a {
 	color: #e18d3b;
 }
 
+a.button,
+#content a.button {
+	background-color: #d18f4f;
+}
+
+a.button:hover,
+#content a.button:hover {
+	background-color: #cc8540;
+}
+
 /* @end */
    
 body {
@@ -868,17 +878,26 @@ em, i {
 	font-style: italic;
 }
 
+hr {
+	background-image: url(../images/gauze.png);
+	height: 1em;
+	border: none;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
 pre, code {
-	background-color: #292929;
 	font: 15px/18px "Courier New", Courier, mono;
-    border-radius: 3px;
 	word-spacing: 0;
 }
 
 pre {
 	margin-bottom: 20px;
-	padding: 20px;
-	color: #666;
+	padding: 20px 40px;
+	color: #ccc;
+	background-color: #292929;
+	margin-left: -40px;
+	margin-right: -40px;
 }
 
 code {
@@ -886,6 +905,14 @@ code {
 	padding: 3px;
 	background-color: #e2e2e2;
 	text-shadow: 0 1px 0 #ffffff;
+	 border-radius: 3px;
+}
+
+pre code {
+	background-color: transparent;
+	text-shadow: 0 -1px 0 #000000;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 #content code a {
@@ -913,6 +940,7 @@ pre strong, pre b {
 	padding: 20px 30px;
 	background: url(../images/concrete1.jpg) #f2f2f2;
 	position: relative;
+	text-shadow: 0 1px 0 #ffffff;
 }
 
 #content ol,
@@ -1092,12 +1120,52 @@ pre strong, pre b {
 	margin-bottom: 10px;
 }
 
-h3 {
-	font: italic 500 23px/26px omnes-pro-i5, omnes-pro, Verdana, sans-serif;
-	color: #a89e72;
+#content h3 {
+	font: normal bold 20px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+	margin-bottom: 10px;
 }
 
 /* @end */
+
+
+a.button,
+#content a.button {
+	border-radius: 5px;
+	border: 1px solid #999;
+	-webkit-box-shadow: 
+		0 0 5px rgba(0, 0, 0, 0.28), 
+		inset 0 1px 0 rgba(255, 255, 255, 0.45), 
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45), 
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45), 
+		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+	box-shadow: 
+		0 0 5px rgba(0, 0, 0, 0.28), 
+		inset 0 1px 0 rgba(255, 255, 255, 0.45), 
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45), 
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45), 
+		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+	text-decoration: none;
+	color: #fff !important;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
+	padding: 5px 12px;
+	font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+a.button.large,
+#content a.button.large {
+	font-size: 20px;
+}
+
+a.button.dark,
+#content a.button.dark {
+	background-color: #666;
+}
+
+a.button.dark:hover,
+#content a.button.dark:hover {
+	background-color: #424141;
+}
 
 /* ==========================================================================
    Media Queries
