@@ -18,7 +18,7 @@
         <script type="text/javascript" src="//use.typekit.net/rib7dfk.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
-    <body>
+    <body id="body-jquery">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
@@ -119,146 +119,246 @@
         <!--Container ======================================================================-->
         <div id="container">	        	
         	
-        	<h2 class="logo"><a href="#">jQuery Foundation</a></h2>
-        	<!--Ads or events-->
-        	<aside></aside>
+        	<div id="logo-events" class="constrain clearfix">
         	
-       
+        	<h2 class="logo"><a href="#">jQuery</a></h2>
+        	<!--Ads or events-->
+        	<aside>Hey extra stuff can go here!</aside>
+        	
+       		</div><!--End Constrain-->
+       		
+       		
+       		
 	        <!--Main Nav ===================================================================-->
-	    	<nav>
+	    	<nav id="main" class="constrain clearfix">
 	    		<ul>
-	    			<li><a href="#">Home</a></li>
+	    			<li class="current"><a href="#">Home</a></li>
 	    			<li><a href="#">Sponsors</a></li>
 	    			<li><a href="#">Past Events</a></li>
 	    		</ul>
+	    		
+	    		<form method="get" class="searchform" action="http://dev.api.jquery.com/">
+	    			
+	    			
+	    			<input type="text" name="keywords" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Search jQuery':this.value;" value="Search jQuery">
+	    			<i class="icon-search"></i>
+	    		</form>
 	    	</nav>        
 	        <!--End Main Nav =================================================================-->
 	        
 	 	        
+	        <!--Content Wrapper ===============================================================-->
+	        <div id="content-wrapper" class="clearfix">
 	        
-	        
-	        
-	        <!--Content ======================================================================-->
-	        <div id="content">
-	        
-	        	<h1>Heading One Goes Here</h1>
-				<p class="intro">We can have a intro paragraph to help lead people into the content. A quick overview is always nice to have, don’t you think? Yeah I do, thanks.</p>
+		        <!--Content ======================================================================-->
+		        <div id="content">
+		        
+		        	<h1>Heading One Goes Here</h1>
+					<p class="intro">We can have a intro paragraph to help lead people into the content. A quick overview is always nice to have, don’t you think? Yeah I do, thanks.</p>
+					
+					<figure class="full">					
+						<img class="full" src="images/dummy-blog.jpg" width="30000" alt="test">
+						
+						<figcaption>Hey look a figcaption!</figcaption>
+					</figure>
+					
+					<h2>Secondary Header goes here</h2>
+					<p><img src="images/dummy-blog.jpg" alt="#" width="300" class="right"/>For over 21 years, we’ve been doing <strong>extreme makeovers</strong> on cracked, bulging, and downright ugly floors in <em>Dayton, Ohio</em>, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and <a href="#">concrete restoration</a>. For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration.</p>
 				
-				<img src="images/dummy-blog.jpg" alt="#" class="full"/>
-				
-				<h2>Secondary Header goes here</h2>
-				<p><img src="images/dummy-blog.jpg" alt="#" width="300" class="right"/>For over 21 years, we’ve been doing <strong>extreme makeovers</strong> on cracked, bulging, and downright ugly floors in <em>Dayton, Ohio</em>, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and <a href="#">concrete restoration</a>. For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration.</p>
-			
-	    		<blockquote><p>This is a blockquote or pull quote. It’s a nice callout will that visually distinguishes itself from rest of the body copy. Pretty cool, eh?</p></blockquote>
-	    		
-	    		<div class="embed"><iframe width="568" height="319" src="http://www.youtube.com/embed/4D0gyWe5mp4" frameborder="0" allowfullscreen></iframe></div>
-	    		
-	    		<h3>Third Level Header is Here</h3>
-	    		<p>For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration. For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration.</p>
-	    		
-	    		<ul>
-	    			<li>Here's a list element</li>
-	    			<li>And another one</li>
-	    			<li>Yet a third! Amazing, no?</li>
-	    		</ul>
-	    		
-	    		<p>For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration. For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration.</p>
-	    		
-	    		<hr />
-	    		
-	    		
-	    		<h2>Testing Code</h2>
-	    		
-	    		<p>We just use the <code>&#123;structure:freebie:entry_id&#125;</code> to grab that entry_id and show the correct content. In my case I was using a lot of template embeds so we can pass it through as a parameter as well. Don't forget to include that alt status!</p>
-	    		
-	    		<pre><code> &lt;html&gt;
-	    		
-	    		 &#123;exp:channel:entries channel="content" status="open|Alt" 
-	    		 disable="member_data|pagination|trackbacks|category_fields"  
-	    		  entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
-	    		
-	    		    &lt;meta name="description" content="&#123;desc&#125;" /&gt;
-	    		    &lt;title&gt;&#123;exp:structure:titletrail separator="|"&#125;&lt;/title&gt;   
-	    		
-	    		    &#123;rss&#125;
-	    		    &#123;stylesheets&#125;
-	    		    &#123;js&#125;
-	    		    &#123;js_campaign&#125; (for Google Code)
-	    		
-	    		    &#123;html_head_end&#125;
-	    		
-	    		    &lt;body&gt;
-	    		
-	    		    &#123;embed="global/header"&#125;
-	    		
-	    		    &#123;embed="global/banner_action" 
-	    		    entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
-	    		
-	    		    &lt;div id="content"&gt;
-	    		
-	    		        &#123;embed="global/structure_content" 
-	    		            entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
-	    		
-	    		    &lt;/div&gt;&lt;!--End Content--&gt;
-	    		
-	    		    &#123;embed="global/sidebar" entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
-	    		
-	    		    &#123;embed="global/footer" entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
-	    		
-	    		 &#123;/exp:channel:entries&#125;
-	    		
-	    		 &lt;/body&gt;
-	    		 &lt;/html&gt;
-	    		</code></pre>
-	    		
-	    		<a class="button" href="#">Testing Button</a>
-	    		<a class="button" href="#">Testing Button</a>
-	    		<a class="button" href="#">Testing Button</a>
-	    		<a class="button" href="#">Testing Button</a>
-	    		<a class="button" href="#">Testing Button</a>
-	    		
-	    		<ol>
-	    			<li>Don't forget the ordered list</li>
-	    			<li>You  might want to use that, too</li>
-	    			<li>Yeah, sure!</li>
-	    		</ol>
-	    		
-	    		
-	    		<form method="post" action="#"  >
-	    		
-	    		<h2 class="form-header">Form Header Here</h2>
-	    	
-	    			<label class="required" for="fname">First Name</label>
-	    			<input class="text required" name="fname" id="fname" type="text" />
-	    			
-	    			<label class="required" for="lname">Last Name</label>
-	    			<input class="text required" name="lname" id="lname" type="text" />
-	    			
-	    			<label for="email">Email Address</label>
-	    			<input class="text" name="email" type="text" id="email" />
-	    		
-	    			<label class="required" for="message">Write your message here.</label>
-	    			<textarea class="comment required" name="message" id="message"></textarea>
-	    			
-	    			<input name="submit" type="submit" value="Submit" />
-	    		</form>
-	        
-	        </div>
-	        <!--End Content ==================================================================-->
+		    		<blockquote><p>This is a blockquote or pull quote. It’s a nice callout will that visually distinguishes itself from rest of the body copy. Pretty cool, eh?</p></blockquote>
+		    		
+		    		<div class="embed"><iframe width="568" height="319" src="http://www.youtube.com/embed/4D0gyWe5mp4" frameborder="0" allowfullscreen></iframe></div>
+		    		
+		    		<h3>Third Level Header is Here</h3>
+		    		<p>For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration. For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration.</p>
+		    		
+		    		<ul>
+		    			<li>Here's a list element</li>
+		    			<li>And another one</li>
+		    			<li>Yet a third! Amazing, no?</li>
+		    		</ul>
+		    		
+		    		<p>For over 21 years, <code><a href="#">&#123;structure:freebie:entry_id&#125;</a></code> we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration. For over 21 years, we’ve been doing extreme makeovers on cracked, bulging, and downright ugly floors in Dayton, Ohio, and throughout the Midwest. We’re experts in epoxy flooring, concrete surface preparation, and concrete restoration.</p>
+		    		
+		    		<hr />
+		    		
+		    		
+		    		<h2>Testing Code</h2>
+		    		
+		    		<p>We just use the <code>&#123;structure:freebie:entry_id&#125;</code> to grab that entry_id and show the correct content. In my case I was using a lot of template embeds so we can pass it through as a parameter as well. Don't forget to include that alt status!</p>
+		    		
+<pre><code> &lt;html&gt;
+
+&#123;exp:channel:entries channel="content" status="open|Alt" 
+disable="member_data|pagination|trackbacks|category_fields"  
+entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
+
+&lt;meta name="description" content="&#123;desc&#125;" /&gt;
+&lt;title&gt;&#123;exp:structure:titletrail separator="|"&#125;&lt;/title&gt;   
+
+&#123;rss&#125;
+&#123;stylesheets&#125;
+&#123;js&#125;
+&#123;js_campaign&#125; (for Google Code)
+
+&#123;html_head_end&#125;
+
+&lt;body&gt;
+
+&#123;embed="global/header"&#125;
+
+&#123;embed="global/banner_action" 
+entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
+
+&lt;div id="content"&gt;
+
+    &#123;embed="global/structure_content" 
+        entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
+
+&lt;/div&gt;&lt;!--End Content--&gt;
+
+&#123;embed="global/sidebar" entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
+
+&#123;embed="global/footer" entry_id="&#123;structure:freebie:entry_id&#125;"&#125;
+
+&#123;/exp:channel:entries&#125;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+		    		
+		    		<a class="button" href="#">Testing Button</a>
+		    		<a class="button" href="#">Testing Button</a>
+		    		<a class="button" href="#">Testing Button</a>
+		    		<a class="button" href="#">Testing Button</a>
+		    		<a class="button" href="#">Testing Button</a>
+		    		
+		    		<ol>
+		    			<li>Don't forget the ordered list</li>
+		    			<li>You  might want to use that, too</li>
+		    			<li>Yeah, sure!</li>
+		    		</ol>
+		    		
+		    		
+		    		<form class="infield" method="post" action="#"  >
+		    		
+		    		<h2 class="form-header">Form Header Here</h2>
+		    	
+		    			<label class="required" for="fname">First Name</label>
+		    			<input class="text required" name="fname" id="fname" type="text" />
+		    			
+		    			<label class="required" for="lname">Last Name</label>
+		    			<input class="text required" name="lname" id="lname" type="text" />
+		    			
+		    			<label for="email">Email Address</label>
+		    			<input class="text" name="email" type="text" id="email" />
+		    		
+		    			<label class="required" for="message">Write your message here.</label>
+		    			<textarea class="comment required" name="message" id="message"></textarea>
+		    			
+		    			<input name="submit" type="submit" value="Submit" />
+		    		</form>
 		        
-		        
-		        
-	        <!--Sidebar ======================================================================-->
-	        <div id="sidebar">
-	        
-	        </div>
-	        <!--End Sidebar ==================================================================-->
+		        </div>
+		        <!--End Content ==================================================================-->
+			        
+			        
+			        
+		        <!--Sidebar ======================================================================-->
+		        <div id="sidebar">
+		        <h3>Hey I'm a sidebar!</h3>
+		        </div>
+		        <!--End Sidebar ==================================================================-->
         
-        
+        	</div>
+        	<!--End Content Wrapper =========================================================-->
         
         </div>
         <!--End Container ===================================================================-->
         
+        <!--Footer ===================================================================-->
+        <footer class="clearfix">
+        
+          <div class="constrain">
+        
+          	
+            <div class="col7-3 col">
+              <h3><span>Quick Access</span></h3>
+              <div class="cdn">
+                <strong>CDN</strong>
+                <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+              </div>
+              <div class="download">
+                <strong>Download jQuery 1.7.2:</strong>
+                <span><a href="http://code.jquery.com/jquery-1.7.2.min.js">Minified <em>(32KB)</em></a>
+                <a href="http://code.jquery.com/jquery-1.7.2.js">Unminified <em>(247KB)</em></a></span>
+              </div>
+              <ul class="footer-icon-links">
+                <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
+                <li class="footer-icon icon-forum"><a href="http://forum.jquery.com">Forum <small>Community <br>Support</small></a></li>
+                <li class="footer-icon icon-bugs"><a href="http://bugs.jquery.com">Bugs <small>Issue <br>Tracker</small></a></li>
+              </ul>
+            </div>
+        
+            <div class="col7-2 col">
+              <h3><span>Presentations</span></h3>
+              <ul class="presentations">
+                <li>
+                  <a href="#">
+                    <span><img src="http://dev.api.jquery.com/web-base-template/themes/jquery/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmoni" width="142" height="92" /></span>
+                    <strong>Building Single Page Applications With jQuery's Best Friends</strong><br />
+                    <cite>Addy Osmoni</cite>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="http://dev.api.jquery.com/web-base-template/themes/jquery/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmoni" width="142" height="92" /></span>
+                    <strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
+                    <cite>Addy Osmoni</cite>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        
+            <div class="col7-2 col">
+              <h3><span>Books</span></h3>
+              <ul class="books">
+                <li>
+                  <a href="http://link.packtpub.com/S3Fr9Q">
+                    <span class="bottom"><img src="http://dev.api.jquery.com/web-base-template/themes/jquery/content/books/learning-jquery-3rd-ed.jpg" alt="Learning jQuery 3rd Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114" /></span>
+                    <strong>Learning jQuery Third Edition</strong><br />
+                    <cite>Karl Swedberg and Jonathan Chaffer</cite>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.manning.com/affiliate/idevaffiliate.php?id=648_176">
+                    <span><img src="http://dev.api.jquery.com/web-base-template/themes/jquery/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault and Yehuda Katz" width="92" height="114" /></span>
+                    <strong>jQuery in Action</strong><br />
+                    <cite>Bear Bibeault and Yehuda Katz</cite>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://jqueryenlightenment.com/">
+                    <span><img src="http://dev.api.jquery.com/web-base-template/themes/jquery/content/books/jquery-enlightenment.jpg" alt="jQuery Enlightenment by Cody Lindley" width="92" height="114" /></span>
+                    <strong>jQuery Enlightenment</strong><br />
+                    <cite>Cody Lindley</cite>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="legal">
+              <ul class="footer-site-links">
+                <li class="icon-learning-center icon"><a href="http://dev.learn.jquery.com/">Learning Center</a></li>
+                <li class="icon-forum icon"><a href="http://forum.jquery.com/">Forum</a></li>
+                <li class="icon-api icon"><a href="http://dev.api.jquery.com/">API</a></li>
+                <li class="icon-twitter icon"><a href="http://twitter.com/jquery">Twitter</a></li>
+                <li class="icon-irc icon"><a href="http://irc.jquery.com/">IRC</a></li>
+              </ul>
+                <p class="copyright">Copyright 2012 <a href="http://dev.jquery.org/team/">The jQuery Foundation</a>.<br /><span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://dev.jquery.org/sponsors/">View sponsors</a></span></p>
+            </div>
+          </div>
+        </footer>
+        <!--End Footer ===================================================================-->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
