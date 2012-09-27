@@ -1244,7 +1244,7 @@ footer strong {
 
 footer .cdn {
 	border-radius: 4px;
-	background: #000 url(../i/cdn-download.png) center center repeat-x;
+	background: repeat-x center center #000;
 	width: 96%;
 	margin-left: 2%;
 	height: 30px;
