@@ -426,7 +426,7 @@ body {
 	-moz-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	-webkit-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
-	max-width: 1160px;
+	max-width: 1240px;
 	padding: 40px;
 	margin: 0 auto;
 	border-radius: 0px 0px 10px 10px;
@@ -434,7 +434,7 @@ body {
 }
 
 .constrain {
-	max-width: 1200px;
+	max-width: 1240px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -472,7 +472,7 @@ body {
 		background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
 		background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
 		background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
-		width: 25%;
+		width: 29%;
 		border: 0px;
 		border-left: 1px solid #cccccc;
 		padding-top: 40px;
