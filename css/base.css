@@ -1,7 +1,6 @@
 /* @override 
 	http://jon-mbp.local/~jon/jquery/css/main.css
-	http://jon-mbp.local/~jon/jquery/css/base.css
-	http://jquerybase.47dev.com/css/base.css */
+	http://jon-mbp.local/~jon/jquery/css/base.css */
 
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
@@ -426,7 +425,7 @@ body {
 	-moz-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	-webkit-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
-	max-width: 1160px;
+	max-width: 1240px;
 	padding: 40px;
 	margin: 0 auto;
 	border-radius: 0px 0px 10px 10px;
@@ -434,7 +433,7 @@ body {
 }
 
 .constrain {
-	max-width: 1200px;
+	max-width: 1240px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -472,7 +471,7 @@ body {
 		background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
 		background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
 		background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
-		width: 25%;
+		width: 29%;
 		border: 0px;
 		border-left: 1px solid #cccccc;
 		padding-top: 40px;
@@ -1018,13 +1017,13 @@ pre strong, pre b {
 	border-radius: 12px;
 }
 
-.lt-ie8 #content ol,
-.lt-ie7 #content ol {
+.ie7 #content ol,
+.ie6 #content ol {
 	margin-left:20px;
 }
 
-.lt-ie8 #content ol li,
-.lt-ie7 #content ol li {
+.ie7 #content ol li,
+.ie6 #content ol li {
 	margin-left: 30px;
 	list-style-type: decimal;
 	padding-left: 0px;
@@ -1037,12 +1036,12 @@ pre strong, pre b {
 	max-width: 100%;
 }
 
-.lt-ie8 #content figure img {
+.ie7 #content figure img {
 	position: relative;
 }
 
-.lt-ie7 #content figure.full,
-.lt-ie8 #content figure.full {
+.ie6 #content figure.full,
+.ie7 #content figure.full {
 	width: 99%;
 }
 
@@ -1073,10 +1072,10 @@ pre strong, pre b {
 	margin-left: 15px;
 }
 
-.lt-ie8 #content img.right,
-.lt-ie8 #content figure.right,
-.lt-ie7 #content img.right,
-.lt-ie7 #content figure.right {
+.ie7 #content img.right,
+.ie7 #content figure.right,
+.ie6 #content img.right,
+.ie6 #content figure.right {
 	float: left;
 	margin-left: 0px;
 	margin-right: 15px;
