@@ -1015,15 +1015,11 @@ pre strong, pre b {
 	border-radius: 12px;
 }
 
-.ie7 #content ol,
-.ie6 #content ol {
 .lt-ie8 #content ol,
 .lt-ie7 #content ol {
 	margin-left:20px;
 }
 
-.ie7 #content ol li,
-.ie6 #content ol li {
 .lt-ie8 #content ol li,
 .lt-ie7 #content ol li {
 	margin-left: 30px;
@@ -1038,13 +1034,10 @@ pre strong, pre b {
 	max-width: 100%;
 }
 
-.ie7 #content figure img {
 .lt-ie8 #content figure img {
 	position: relative;
 }
 
-.ie6 #content figure.full,
-.ie7 #content figure.full {
 .lt-ie7 #content figure.full,
 .lt-ie8 #content figure.full {
 	width: 99%;
@@ -1077,10 +1070,6 @@ pre strong, pre b {
 	margin-left: 15px;
 }
 
-.ie7 #content img.right,
-.ie7 #content figure.right,
-.ie6 #content img.right,
-.ie6 #content figure.right {
 .lt-ie8 #content img.right,
 .lt-ie8 #content figure.right,
 .lt-ie7 #content img.right,
