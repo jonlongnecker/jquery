@@ -450,6 +450,8 @@ body {
 
 .content-full #content {
 	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 
@@ -988,6 +990,10 @@ pre strong, pre b {
 	background: url(../images/bullet.png) no-repeat 0 10px;
 }
 
+#content ul.block-grid li {
+	background: none;
+}
+
 #content ol {
 	counter-reset:li; /* Initiate a counter */
 }
@@ -1139,7 +1145,7 @@ pre strong, pre b {
 
 
 #content h1 {
-	font: bold 34px/34px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: normal 36px/36px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: -1px;
 }
 
@@ -1148,15 +1154,34 @@ pre strong, pre b {
 }
 
 #content h2 {
-	font: bold 22px/22px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: normal 24px/24px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #333;
 	margin-bottom: 10px;
 }
 
 #content h3 {
-	font: normal bold 20px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: normal normal 20px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #666;
 	margin-bottom: 10px;
+}
+
+p.author {
+	color: #ababab;
+	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: -20px;
+}
+
+p.author a {
+	color: #ababab;
+}
+
+.meta {
+	background-color: #f0f0f0;
+	padding: 2%;
+	padding-bottom: .5%;
+	margin-bottom: 20px;
+	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
 }
 
 #banner-secondary {
@@ -1181,8 +1206,8 @@ pre strong, pre b {
 	color: #ccc;
 	font: 26px/26px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: -1px;
-	padding-left: 17%;
-	padding-right: 17%;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 #banner-secondary.large-banner {
@@ -1195,6 +1220,11 @@ pre strong, pre b {
 #banner-secondary.large-banner h2 {
 	font-size: 60px;
 	line-height: 60px;
+	margin-bottom: 10px;
+}
+
+.center-txt {
+	text-align: center;
 }
 
 /* @end */
@@ -1850,7 +1880,7 @@ footer li img {
 	}
 	
 	nav#main ul {
-		width: 100%;
+		width: 100% !important;
 		text-align: center !important;
 		float: left;
 		margin-bottom: 10px;
@@ -1902,6 +1932,17 @@ footer li img {
 		line-height: 26px;
 	}
 	
+	#banner-secondary.large-banner h1,
+	#banner-secondary.large-banner h2 {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	
+	#banner-secondary.large-banner p {
+		font-size: 22px;
+		padding: 0;
+	}
+	
 	footer .presentations li,
 	footer .books li {
 		clear: both;
@@ -1927,6 +1968,11 @@ footer li img {
 	#container {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	
+	.content-full #content {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	#content-wrapper {
