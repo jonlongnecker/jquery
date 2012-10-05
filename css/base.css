@@ -972,6 +972,10 @@ pre strong, pre b {
 	margin: 0 0 20px 20px;
 }
 
+#content ul ul {
+	margin-bottom: 0;
+}
+
 #content li {
 	padding-bottom: 5px;
 	padding-top: 5px;
