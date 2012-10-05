@@ -1161,12 +1161,31 @@ pre strong, pre b {
 	margin-bottom: 30px;
 }
 
-#banner-secondary h2 {
+#banner-secondary h2,
+#banner-secondary h1 {
 	font: bold 45px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: -1px;
 	margin-bottom: 0;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
+}
+
+#banner-secondary p {
+	color: #ccc;
+	font: 26px/26px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+}
+
+#banner-secondary.large-banner {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#banner-secondary.large-banner h1,
+#banner-secondary.large-banner h2 {
+	font-size: 60px;
+	line-height: 60px;
 }
 
 /* @end */
