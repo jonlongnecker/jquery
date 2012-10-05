@@ -18,6 +18,25 @@ a,
 	font-style: normal;
 }
 
+.history-page #content h2 {
+	color: #0098bf;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+
+.history-page #content h3 {
+	color: #b71551;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 24px;
+	border-top: 1px solid #d7d7d7;
+	padding-top: 20px;
+}
+
 a.button,
 #content a.button {
 	background-color: #b71551;

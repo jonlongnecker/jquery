@@ -1177,6 +1177,8 @@ pre strong, pre b {
 	color: #ccc;
 	font: 26px/26px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: -1px;
+	padding-left: 17%;
+	padding-right: 17%;
 }
 
 #banner-secondary.large-banner {
