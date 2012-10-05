@@ -1,6 +1,7 @@
 /* @override 
-	http://jon-mbp.local/~jon/jquery/css/custom-colors.css */
+	http://jon-mbp.local/~jon/jquery/css/jquery-foundation-main.css */
 
+/*Custom Colors*/
 
 a,
 #sidebar h3 {
@@ -29,4 +30,15 @@ a.button:hover,
 #container,
 footer {
 	border-top: 1px solid rgb(34, 139, 193);
+}
+
+
+/*Adjust widths for longer navigation*/
+
+nav#main .searchform {
+	width: 20%;
+}
+
+nav#main ul {
+	width: 80%;
 }
