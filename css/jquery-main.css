@@ -1,0 +1,32 @@
+/* @override 
+	http://jon-mbp.local/~jon/jquery/css/custom-colors.css */
+
+
+a,
+#sidebar h3 {
+	color: #065a96;
+} 
+
+#content code a {
+	background-color: rgba(6, 89, 150, 0.19);
+}
+
+#content h1 {
+	color: #e18d3b;
+}
+
+a.button,
+#content a.button {
+	background-color: #d18f4f;
+}
+
+a.button:hover,
+#content a.button:hover {
+	background-color: #cc8540;
+}
+
+
+#container,
+footer {
+	border-top: 1px solid rgb(34, 139, 193);
+}
