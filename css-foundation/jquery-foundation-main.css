@@ -42,11 +42,6 @@ a,
 	line-height: 24px;
 }
 
-.team-page.content-full #content {
-	padding-left: 0;
-	padding-right: 0;
-}
-
 .team-page #content ul.block-grid img {
 	display: block;
 	width: 100%;
@@ -87,6 +82,32 @@ a,
 	padding-left: 10%;
 	padding-right: 10%;
 	color: #b71551;
+}
+
+.members-page #content h2.block {
+	text-align: center;
+}
+
+.members-page #content a {
+	color: #d58349;
+}
+
+.members-page #content ul.block-grid h3 {
+	color: #4d4d4d;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 0;
+	border-top: 1px solid #e0e0e0;
+	padding-top: 15px;
+}
+
+.members-page #content ul.block-grid p {
+	margin-bottom: 0;
+}
+
+.members-page #content ul.block-grid p a {
+	text-decoration: none;
 }
 
 a.button,

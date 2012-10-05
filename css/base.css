@@ -454,6 +454,11 @@ body {
 	padding-right: 10%;
 }
 
+.content-full.full-width #content {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 
 #sidebar {
 		float: right;
@@ -1165,6 +1170,13 @@ pre strong, pre b {
 	margin-bottom: 10px;
 }
 
+#content h1.block,
+#content h2.block {
+	padding: 10px 2%;
+	background: url(../images/gauze.png) #ececec;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
 p.author {
 	color: #ababab;
 	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -1176,12 +1188,13 @@ p.author a {
 }
 
 .meta {
-	background-color: #f0f0f0;
 	padding: 2%;
 	padding-bottom: .5%;
 	margin-bottom: 20px;
 	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #666;
+	background: url(../images-foundation/gauze.png) #f0f0f0;
+	text-shadow: 0 1px 0 #ffffff;
 }
 
 #banner-secondary {
