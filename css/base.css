@@ -1139,6 +1139,10 @@ pre strong, pre b {
 	letter-spacing: -1px;
 }
 
+.content-full #content h1 {
+	text-align: center;
+}
+
 #content h2 {
 	font: bold 22px/22px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #333;
