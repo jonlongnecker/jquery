@@ -5,7 +5,7 @@
 
 a,
 #sidebar h3 {
-	color: #0098bf;
+	color: #b71551;
 } 
 
 #content code a {
@@ -13,7 +13,7 @@ a,
 }
 
 #content h1 {
-	color: #b71551;
+	color: #0098bf;
 	font-weight: normal;
 	font-style: normal;
 }
