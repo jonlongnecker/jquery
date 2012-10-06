@@ -884,7 +884,7 @@ nav#main .searchform i {
 
 /* @end */
 
-/* @group Typography */
+/* @group Typography & Global Styles */
 
 #content a {
 	text-decoration: underline;  
@@ -1238,6 +1238,11 @@ p.author a {
 
 .center-txt {
 	text-align: center;
+}
+
+.callout-block {
+	background-image: url(../images/gauze.png);
+	padding: 20px;
 }
 
 /* @end */
