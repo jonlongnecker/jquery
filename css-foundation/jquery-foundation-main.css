@@ -127,6 +127,11 @@ a,
 	width: 65%;
 }
 
+.donate-page #content .row .callout-block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 a.button,
 #content a.button {
 	background-color: #b71551;
