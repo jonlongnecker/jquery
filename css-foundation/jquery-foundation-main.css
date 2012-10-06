@@ -110,6 +110,23 @@ a,
 	text-decoration: none;
 }
 
+
+.sponsors-page #content ul.block-grid li {
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 20px;
+}
+
+.sponsors-page ul.block-grid li img {
+	float: left;
+	width: 30%;
+	margin-top: 10%;
+}
+
+.sponsors-page ul.block-grid li p {
+	float: right;
+	width: 65%;
+}
+
 a.button,
 #content a.button {
 	background-color: #b71551;
@@ -135,4 +152,23 @@ nav#main .searchform {
 
 nav#main ul {
 	width: 80%;
+}
+
+@media only screen and (max-width: 767px) { 
+	.sponsors-page ul.block-grid li img {
+		float: none;
+		width: 80%;
+		max-width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	
+	.sponsors-page ul.block-grid li p {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
 }
