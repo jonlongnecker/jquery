@@ -62,13 +62,41 @@ a,
 	float: left;
 	display: inline;
 	margin-right: 5%;
-	background-image: url(../images/dark-grey-tile.png);
+	background: url(../images/dark-grey-tile.png);
+	position: relative;
+	overflow: hidden;
 }
 
 .member-level.last {
 	margin-right: 0px;
 	
 }
+
+.member-level-icon {
+	display: block;
+	position: absolute;
+	top: 90px;
+	right: -50px;
+	
+	width: 225px;
+	height: 225px;
+	opacity: 0.2;
+	z-index: 1;
+}
+
+.member-level-icon.fan {
+	background: url(../images-foundation/icn-fan.png) center top;
+}
+
+.member-level-icon.friend {
+	background: url(../images-foundation/icn-friend.png) center top;
+}
+
+.member-level-icon.hero {
+	background: url(../images-foundation/icn-hero.png) center top;
+}
+
+
 
 #content .member-level h3 {
 	background-color: rgba(0, 0, 0, 0.66);
@@ -85,6 +113,10 @@ a.icon-search {
 	display: block;
 	position: relative;
 	text-decoration: none !important;
+	float: left;
+	display: inline;
+	margin-left: 15px;
+	margin-bottom: 10px;
 }
 
 a::before {
@@ -97,10 +129,67 @@ a.icon-search::before {
 	color: #333333;
 }
 
+
+.member-level ul {
+	float: left;
+	list-style: none;
+	position: relative;
+	z-index: 2;
+	
+}
+
+#content .member-level ul li, #content .member-level ul li strong {
+	padding-left: 0;
+	padding-right: 15px;
+	background: none;
+	color: #f3f3f3;
+	font-family: proxima-nova;
+}
+
+.member-level p {
+	color: #f3f3f3;
+	font-family: proxima-nova;
+	float: left;
+	display: inline;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.member-level a.button {
+	float: left;
+	display: inline-block;
+	clear: both;
+	position: relative;
+	z-index: 2;
+	margin-left: 15px;
+	margin-bottom: 30px;
+
+}
+
+
 .choose-gifts {
 	background-color: #378a9b;
 	border-bottom: 16px solid #1b4c5e;
+	clear: both;
+	position: relative;
+	z-index: 2;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
 }
+
+.choose-gifts h4 {
+	font: bold 18px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.choose-gifts label {
+	color: #ffffff;
+	margin-right: 20px;
+}
+
 
 /*History Page*/
 
