@@ -1,8 +1,8 @@
-    /* @override 
-	http://jon-mbp.local/~jon/jquery/css/main.css
-	http://jon-mbp.local/~jon/jquery/css/base.css
-	http://jquerybase.47dev.com/css/base.css
-	http://nate-mbp.local/~natecroft/jquery/css/base.css */
+/* @override 
+		  http://jon-mbp.local/~jon/jquery/css/main.css
+		  http://jon-mbp.local/~jon/jquery/css/base.css
+		  http://jquerybase.47dev.com/css/base.css
+		  http://nate-mbp.local/~natecroft/jquery/css/base.css */
 
 /* HTML5 Boilerplate styles
    ========================================================================== */
@@ -63,6 +63,12 @@ textarea {
    ========================================================================== */
    
 /* Add the Journal typeface to your CSS by including `JournalRegular` in the family font-stack. Font Awesome info next.  
+
+    <div id="banner"><h3>I'm a Journal Header</h3></div>
+    
+Additionally, Proxima Nova is served via Typekit for global use. Add `proxima-nova` to the fontstack.
+
+    <div id="content"><h2>Proxima Nova Header</h2></div>   
 */ 
    
 @font-face {
@@ -84,7 +90,7 @@ textarea {
     font-style: normal;
 }
    
-/*Font Awesome styles
+/* Font Awesome styles
      ========================================================================== */
      
 /*FontAwesome icons can be added via the `i` element or onto `h1`, `h2`, `h3`, `li` elements, etc. Some additional CSS styling may need to be done to get it to show up correctly.
@@ -105,13 +111,13 @@ a [class^="icon-"], a [class*=" icon-"] {
  display: inline-block;
  text-decoration: inherit;
 }
-/* makes the font 33% larger relative to the icon container */
+  /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
  vertical-align: top;
  font-size: 1.3333333333333333em;
 }
 .btn [class^="icon-"], .btn [class*=" icon-"] {
- /* keeps button heights with and without icons the same */
+   /* keeps button heights with and without icons the same */
 
  line-height: .9em;
 }
@@ -121,7 +127,7 @@ li [class^="icon-"], li [class*=" icon-"] {
  text-align: center;
 }
 li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
- /* 1.5 increased font size for icon-large * 1.25 width */
+   /* 1.5 increased font size for icon-large * 1.25 width */
 
  width: 1.875em;
 }
@@ -136,7 +142,7 @@ li[class^="icon-"]:before, li[class*=" icon-"]:before {
 li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
  text-indent: -1.3333333333333333em;
 }
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+  /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
 .icon-glass:before                { content: "\f000"; }
 .icon-music:before                { content: "\f001"; }
@@ -170,7 +176,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-play-circle:before          { content: "\f01d"; }
 .icon-repeat:before               { content: "\f01e"; }
 
-/* \f020 doesn't work in Safari. all shifted one down */
+  /* \f020 doesn't work in Safari. all shifted one down */
 .icon-refresh:before              { content: "\f021"; }
 .icon-list-alt:before             { content: "\f022"; }
 .icon-lock:before                 { content: "\f023"; }
@@ -366,7 +372,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-user-md:before              { content: "\f200"; }
 
 
-/*	Font Awesome
+  /*	Font Awesome
 		the iconic font designed for use with Twitter Bootstrap
 		-------------------------------------------------------
 		The full suite of pictographic icons, examples, and documentation
@@ -1233,6 +1239,10 @@ p.author a {
 	color: #CCCCCC;
 	font: 24px/36px Proxima-Nova;
 	letter-spacing: -1px;
+}
+
+#banner h3 {
+	font-family: "JournalRegular", Georgia, "Times New Roman", Times, serif;
 }
 
 
