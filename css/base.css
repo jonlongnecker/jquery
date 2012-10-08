@@ -1,7 +1,8 @@
 /* @override 
 	http://jon-mbp.local/~jon/jquery/css/main.css
 	http://jon-mbp.local/~jon/jquery/css/base.css
-	http://jquerybase.47dev.com/css/base.css */
+	http://jquerybase.47dev.com/css/base.css
+	http://nate-mbp.local/~natecroft/jquery/css/base.css */
 
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
@@ -1196,6 +1197,39 @@ p.author a {
 	background: url(../images-foundation/gauze.png) #f0f0f0;
 	text-shadow: 0 1px 0 #ffffff;
 }
+
+#banner-large-image {
+	text-align: center;
+	margin-bottom: 30px;
+	
+}
+
+#banner-large-image .vertically-centered-black-bg {
+	height: 50%;
+	width: 100%;
+	margin-top: 24%;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.68);
+	position: absolute;
+	padding-top: 3.5%;
+}
+
+
+#banner-large-image h1, #banner-large-image h2 {
+	font: bold 60px/60px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	margin-bottom: 0;
+	color: #fff;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
+}
+
+
+#banner-large-image p {
+	color: #CCCCCC;
+	font: 24px/36px Proxima-Nova;
+	letter-spacing: -1px;
+}
+
 
 #banner-secondary {
 	background-image: url(../images/dark-grey-tile.png);

@@ -1,5 +1,6 @@
 /* @override 
-	http://jon-mbp.local/~jon/jquery/css-foundation/jquery-foundation-main.css */
+	http://jon-mbp.local/~jon/jquery/css-foundation/jquery-foundation-main.css
+	http://nate-mbp.local/~natecroft/jquery/css/jquery-foundation-main.css */
 
 /*Custom Colors*/
 
@@ -24,6 +25,84 @@ a,
 	font-style: normal;
 	margin-bottom: 20px;
 }
+
+#banner-large-image {
+	margin-right: -40px;
+		margin-left: -40px;
+		margin-top: -40px;
+		height: 360px;
+		background: url(../images-foundation/header-join-page.jpg) no-repeat center;
+		background-size: cover;
+		-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+		display: block;
+		position: relative;
+	}
+	
+
+
+
+#banner-large-image h1 {
+	font-size: 60px;
+}
+
+
+/*Join Page*/
+
+
+#content.join-page-content {
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.member-level {
+	width: 30%;
+	float: left;
+	display: inline;
+	margin-right: 5%;
+	background-image: url(../images/dark-grey-tile.png);
+}
+
+.member-level.last {
+	margin-right: 0px;
+	
+}
+
+#content .member-level h3 {
+	background-color: rgba(0, 0, 0, 0.66);
+	color: #ffffff;
+	text-align: center;
+	font-size: 30px;
+	line-height: 48px;
+	font-weight: bold;
+}
+
+a.icon-search {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: relative;
+	text-decoration: none !important;
+}
+
+a::before {
+	
+}
+
+a.icon-search::before {
+	position: absolute;
+	right: 4px;
+	color: #333333;
+}
+
+.choose-gifts {
+	background-color: #378a9b;
+	border-bottom: 16px solid #1b4c5e;
+}
+
+/*History Page*/
 
 .history-page #content h2 {
 	color: #0098bf;
@@ -71,6 +150,7 @@ a,
 .team-page #content ul.team-list h2,
 .team-page #content ul.team-list h3 {
 	text-align: left;
+
 }
 
 .team-page #content ul.team-list h3 {
