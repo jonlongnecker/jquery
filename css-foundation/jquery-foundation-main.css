@@ -360,3 +360,101 @@ nav#main ul {
 		text-align: center;
 	}
 }
+
+
+/*iPad Portrait*/
+
+@media only screen and (max-width: 768px) {
+
+	#banner-large-image {
+			margin-right: -40px;
+				margin-left: -40px;
+				margin-top: -40px;
+				height: 200px;
+				background: url(../images-foundation/header-join-page.jpg) no-repeat center;
+				background-size: cover;
+				-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+				display: block;
+				position: relative;
+			}
+		
+		
+		#banner-large-image .vertically-centered-black-bg{
+			height: 70% !important;
+			margin-top: 14%;
+			padding-top: 6%;
+		}
+		
+		#banner-large-image h2 {
+			font-size: 40px;
+			line-height: 30px;
+			margin-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	
+		#banner-large-image p {
+		font-size: 1.3em;
+		line-height: 1.4em;
+		padding-bottom: 60px;
+		
+	}	
+		
+		.member-level {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	
+}
+
+/*iPhone Landscape*/
+
+@media only screen and (max-width: 480px) {
+
+	#banner-large-image {
+		margin-right: -25px;
+			margin-left: -25px;
+			margin-top: -40px;
+			height: 200px;
+			background: url(../images-foundation/header-join-page.jpg) no-repeat center;
+			background-size: cover;
+			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+			display: block;
+			position: relative;
+		}
+	
+	
+	#banner-large-image .vertically-centered-black-bg{
+		height: 70% !important;
+		margin-top: 14%;
+		padding-top: 7%;
+	}
+	
+	#banner-large-image h2 {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#banner-large-image p {
+	font-size: 1em;
+	line-height: 1.1em;
+	padding-bottom: 60px;
+	
+}	
+	
+	.member-level {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	
+
+}
+
