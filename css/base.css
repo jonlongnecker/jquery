@@ -1298,7 +1298,7 @@ p.author a {
    ========================================================================== */
 
 a.button,
-#content a.button {
+#content a.button, .button {
 	border-radius: 5px;
 	border: 1px solid #999;
 	-webkit-box-shadow: 
@@ -1326,17 +1326,17 @@ a.button,
 }
 
 a.button.large,
-#content a.button.large {
+#content a.button.large, button.large {
 	font-size: 20px;
 }
 
 a.button.dark,
-#content a.button.dark {
+#content a.button.dark, .button.dark {
 	background-color: #666;
 }
 
 a.button.dark:hover,
-#content a.button.dark:hover {
+#content a.button.dark:hover, .button.dark:hover {
 	background-color: #424141;
 }
 
@@ -1413,6 +1413,7 @@ a.button.dark:hover,
 footer {
 	background: url(../images/bg-footer-noise.jpg) repeat;
 	margin-top: -20px;
+	padding-top: 40px;
 }
 
 footer.simple {
