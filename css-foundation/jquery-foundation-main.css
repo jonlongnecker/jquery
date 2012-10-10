@@ -47,6 +47,22 @@ a,
 	font-size: 60px;
 }
 
+.large-banner img {
+	margin-bottom: 20px;
+}
+
+.sub-banner {
+	background-color: #d6eef1;
+	text-align: center;
+	margin-left: -40px;
+	margin-right: -40px;
+	margin-top: -30px;
+	height: 40px;
+	color: #007d88;
+	font: 20px/40px Proxima-Nova;
+	letter-spacing: -1px;
+}
+
 
 /*Join Page*/
 
