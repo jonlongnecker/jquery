@@ -47,6 +47,10 @@ a,
 	font-size: 60px;
 }
 
+
+
+/*Homepage*/
+
 .large-banner img {
 	margin-bottom: 20px;
 }
@@ -63,6 +67,45 @@ a,
 	letter-spacing: -1px;
 }
 
+.slider-list ul {
+	
+}
+
+#content .slider-list li {
+	padding-left: 0px;
+}
+
+#content .slider-list li img {
+	float: left;
+	display: inline;
+	width: 140px;
+	margin-right: 20px;
+}
+
+#content .slider-list img.last {
+	margin-right: 0px;
+}
+
+.project {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #dddddd;
+}
+
+#content .project h4 {
+	font: bold 24px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	margin-bottom: 0;
+	color: #464646;
+
+}
+
+.project img {
+	float: left;
+	display: inline;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
 
 /*Join Page*/
 
