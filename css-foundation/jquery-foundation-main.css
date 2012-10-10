@@ -67,12 +67,30 @@ a,
 	letter-spacing: -1px;
 }
 
-.slider-list ul {
-	
+#content > div.row {
+	margin-top: 30px;
+}
+
+#content h2.slider-haeding {
+	width: 100%;
+	text-align: center;
+}
+
+#content ul.slider-list {
+	width: 100%;
+	display: block;
+	padding: 15px;
+	border: 1px solid #cbcbcb;
+	margin-left: 0px;
+	height: 96px;
+	overflow: hidden;
+	border-radius: 10px;
 }
 
 #content .slider-list li {
 	padding-left: 0px;
+	display: block;
+	margin-bottom: 70px;
 }
 
 #content .slider-list li img {
@@ -84,6 +102,27 @@ a,
 
 #content .slider-list img.last {
 	margin-right: 0px;
+}
+
+.dark-callout-box {
+	background-image: url(../images/dark-grey-tile.png);
+	margin-bottom: 30px;
+	border-bottom: 10px solid #c1c1c1;
+	border-top: 10px solid #c1c1c1;
+	text-align: center;
+}
+
+#content .dark-callout-box h3 {
+	font: bold 30px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+
+#content .dark-callout-box p {
+	ont: bold 30px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0px;
+	color: #dddcdc;
 }
 
 .project {
