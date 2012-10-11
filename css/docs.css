@@ -1,0 +1,22 @@
+/* @override 
+	http://jon-mbp.local/~jon/jquery/css/docs.css */
+
+header {
+	background: url(../images/bg-body-jquery.jpg) no-repeat center top #065691;
+	margin: 0 auto;
+	padding: 20px 0;
+	   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	margin-bottom: 40px;        
+}
+
+header h3 {
+	float: right;
+	color: rgba(255, 255, 255, 0.5);
+	font: 25px/25px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 0;
+	
+	
+}
