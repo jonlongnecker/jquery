@@ -1,6 +1,7 @@
 /* @override 
 	http://jon-mbp.local/~jon/jquery/css-foundation/jquery-foundation-main.css
-	http://nate-mbp.local/~natecroft/jquery/css/jquery-foundation-main.css */
+	http://nate-mbp.local/~natecroft/jquery/css/jquery-foundation-main.css
+	http://nate-mbp.local/~natecroft/jquery/css-foundation/jquery-foundation-main.css */
 
 /*Custom Colors*/
 
@@ -79,7 +80,7 @@ a,
 #content ul.slider-list {
 	width: 100%;
 	display: block;
-	padding: 15px;
+	padding: 15px 25px;
 	border: 1px solid #cbcbcb;
 	margin-left: 0px;
 	height: 96px;
@@ -97,11 +98,13 @@ a,
 	float: left;
 	display: inline;
 	width: 140px;
-	margin-right: 20px;
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 #content .slider-list img.last {
 	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .dark-callout-box {
