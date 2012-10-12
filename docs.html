@@ -35,28 +35,112 @@
 <!--End Header =================================================================-->	
         
         
-<div class="container">
-<div class="row">
-	<div id="sidebar" class="three columns">
+<div id="container" class="clearfix">
+<div id="content-wrapper">
+	<div id="sidebar">
 		<h3>Sections</h3>
 		<nav>
 			<ul>
-				<li><a href="#">Page Foundation</a></li>
-				<li><a href="#">Grid</a></li>
+				<li><a href="#intro">Intro</a></li>
+				<li><a href="#bkg">Background &amp; Logos</a></li>
 				<li><a href="#">Typography</a></li>
 			</ul>
 		</nav>
 	</div>
-	<div id="content" class="nine columns">
-		<h1>Page Foundation</h1>
-		<p>Some text will go here and it will be fantastic!</p>
+	<div id="content">
+		<h1 id="intro">Intro</h1>
+		<p>The jQuery sites are built with a number of existing libraries and pieces of code. The list below will attempt to catalog the most important ones:</p>
 		
-		<script src="https://gist.github.com/3874777.js?file=test2"></script>
-	</div>
-</div>
+		<ul>
+			<li><a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
+			<li><a href="http://modernizr.com" target="_blank">Modernizr</a></li>
+			<li><a href="https://github.com/scottjehl/Respond" target="_blank">Respond JS</a></li>
+			<li><a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a></li>
+			<li><a href="http://foundation.zurb.com" target="_blank">Zurb Foundation (Grid only)</a></li>
+			<li><a href="https://typekit.com" target="_blank">TypeKit</a></li>
+			<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/" target="_blank">SyntaxHighligher</a></li>
+		</ul>
+		
+		<h1 id="bkg">Background &amp; Logos</h1>
+		<p>The background colors and logos are set in the <code>base.css</code> file of the parent theme and are triggered by <code>id</code>'s on the <code>body</code>. Unless you're setting up a site with a new color scheme and logo you should just need to use one of the following <code>id</code>'s.</p>
+		
+		<ul>
+			<li><strong>jQuery</strong>: No ID needed. <em>(blue)</em></li>
+			<li><strong>jQuery UI</strong>: <code>#body-jquery-ui</code> <em>(orange)</em></li>
+			<li><strong>jQuery Mobile</strong>: <code>#body-jquery-mobile</code> <em>(green)</em></li>
+			<li><strong>Sizzle Js</strong>: <code>#body-sizzlejs</code> <em>(dark orange)</em></li>
+			<li><strong>Qunit Js</strong>: <code>#body-qunitjs</code> <em>(forest green)</em></li>
+			<li><strong>jQuery Foundation</strong>: <code>#body-jquery-foundation</code> <em>(aqua)</em></li>
+		</ul>
+		
+		<p>If you are adding a site with a new logo/color scheme, please add to  <code>base.css</code> Don't forget the retina version of the logo and the media query to toggle it based on pixel density.</p>
+		
+		<p>Other colors (like headers, buttons &amp; links) and layout specific to the site will be in the <code>style.css</code>of that site's theme.</p>
+		
+		<h1 id="foundation">Foundation</h1>
+		
+		<p>Please use this basic foundation for all pages.</p>
+		<ul>
+			<li>The <code>#container</code> sets the background color and provides padding around the white content area.</li>
+			<li>The <code>#content-wrapper</code> creates the white content area and gives the appropriate padding.</li>
+			<li>The <code>#content</code> should be used for the main content column.</li>
+			<li>The <code>#sidebar</code> should be used for the secondary column or sidebar.</li>
+		</ul>
+		
+		<pre>
+			<code>
+&lt;body&gt;
+  &lt;header&gt;
+    Header (Global Nav, Logo and Main Nav)
+  &lt;/header&gt;			
+  &lt;div id="container"&gt;	        	
+    &lt;div id="content-wrapper" class="clearfix"&gt;
+      &lt;div id="content"&gt;
+        Content goes here	 
+      &lt;/div&gt;
+      &lt;div id="sidebar"&gt;
+        Sidebar Here
+      &lt;/div&gt;
+    &lt;/div&gt; &lt;!--End Content Wrapper--&gt;
+  &lt;/div&gt; &lt;!--End Container--&gt;
+&lt;/body&gt;  
+			</code>
+		</pre>
+		
+		<h2>Layout Options</h2>
+		
+		<p>You can easily customize different layouts for <code>#content</code>.</p>
+		
+		<div class="row">
+			<div class="four columns">
+			<figure>
+				<img src="images/docs/layout-sidebar-right.gif" alt="Content Right" />
+				<figcaption><em>This is the default</em></figcaption>
+			</figure>	
+			</div>
+			
+			<div class="four columns">
+			<figure>
+				<img src="images/docs/layout-sidebar-center.gif" alt="Content Right" />
+				<figcaption><em>This is the default</em></figcaption>
+			</figure>	
+			</div>
+			
+			<div class="four columns">
+			<figure>
+				<img src="images/docs/layout-sidebar-left.gif" alt="Content Right" />
+				<figcaption><em>This is the default</em></figcaption>
+			</figure>	
+			</div>
+		</div>
+		
+		
+		
+	</div><!--End Content-->
+	</div><!--End Content Wrapper-->
+</div><!--End Container-->
 
 
-</div>      	
         	       		
        		
 	       
