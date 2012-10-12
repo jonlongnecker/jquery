@@ -1083,8 +1083,11 @@ pre strong, pre b {
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
 }
 
-#content img.noborder {
+#content img.noborder,
+#content figure.noborder {
 	box-shadow: none;
+	border: none;
+	background: none;
 }
 
 #content img.full,
@@ -1134,6 +1137,12 @@ pre strong, pre b {
 	clear: both;
 	margin-top: -10px;
 	background-color: #f2f2f2;
+}
+
+#content figure.noborder figcaption {
+	box-shadow: none;
+	background: none;
+	text-align: center;
 }
 
 #content .embed,
