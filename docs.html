@@ -36,14 +36,15 @@
         
         
 <div id="container" class="clearfix">
-<div id="content-wrapper">
+<div id="content-wrapper" class="clearfix">
 	<div id="sidebar">
 		<h3>Sections</h3>
 		<nav>
 			<ul>
 				<li><a href="#intro">Intro</a></li>
 				<li><a href="#bkg">Background &amp; Logos</a></li>
-				<li><a href="#">Typography</a></li>
+				<li><a href="#foundation">Foundation</a></li>
+				<li><a href="#images">Images</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -87,9 +88,8 @@
 			<li>The <code>#sidebar</code> should be used for the secondary column or sidebar.</li>
 		</ul>
 		
-		<pre>
-			<code>
-&lt;body&gt;
+<pre>
+<code>&lt;body&gt;
   &lt;header&gt;
     Header (Global Nav, Logo and Main Nav)
   &lt;/header&gt;			
@@ -103,9 +103,8 @@
       &lt;/div&gt;
     &lt;/div&gt; &lt;!--End Content Wrapper--&gt;
   &lt;/div&gt; &lt;!--End Container--&gt;
-&lt;/body&gt;  
-			</code>
-		</pre>
+&lt;/body&gt; </code>
+</pre>
 		
 		<h2>Layout Options</h2>
 		
@@ -143,7 +142,63 @@
 			</div>
 		</div>
 		
+		<h1 id="images">Images</h1>
 		
+		<p>Images can be floated and given captions very easily.</p>
+		
+		<div class="example">
+				<h3>Image Full</h3>
+					<p><img src="images/dummy-blog.jpg" alt="#" class="full"/>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+<pre>
+<code>&lt;img src=&quot;#&quot; class=&quot;full&quot;/&gt;</code>
+</pre>
+				</div>
+		
+		<div class="example">
+				<h3>Image Floated Left</h3>
+					<p><img src="images/dummy-blog.jpg" alt="#" width="300" class="left"/>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+<pre>
+<code>&lt;img src=&quot;#&quot; class=&quot;left&quot;/&gt;</code>
+</pre>
+				</div>
+		
+		<div class="example">
+		<h3>Image Floated Right</h3>
+			<p><img src="images/dummy-blog.jpg" alt="#" width="300" class="right"/>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+<pre>
+<code>&lt;img src=&quot;#&quot; class=&quot;right&quot;/&gt;</code>
+</pre>
+		</div>
+		
+		<div class="example">
+				<h3>Image with Caption</h3>
+					<p><figure class="left">					
+						<img class="left" src="images/dummy-blog.jpg" width="300" alt="test">
+						
+						<figcaption>Hey look a figcaption!</figcaption>
+					</figure>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+<pre>
+<code>&lt;figure class=&quot;left&quot;&gt;					
+  &lt;img class=&quot;left&quot; src=&quot;#&quot; &gt;
+  &lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
+&lt;/figure&gt;</code>
+</pre>
+				</div>
+				
+			<div class="example">
+				<h3>Image with Caption &amp; No Border</h3>
+					<p><figure class="left noborder">					
+						<img class="left noborder" src="images/dummy-blog.jpg" width="300" alt="test">
+						
+						<figcaption>Hey look a figcaption!</figcaption>
+					</figure>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+<pre>
+<code>&lt;figure class=&quot;left noborder&quot;&gt;					
+  &lt;img class=&quot;left noborder&quot; src=&quot;#&quot;&gt;
+  &lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
+&lt;/figure&gt;</code>
+</pre>
+				</div>	
 		
 	</div><!--End Content-->
 	</div><!--End Content Wrapper-->
