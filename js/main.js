@@ -15,7 +15,8 @@ return false;
                   });
               });
 
-
+//Colorbox Enlarge//////////////
+$(".enlarge").colorbox({rel:'goodies'});
 
 
 }); //Close Document Ready
