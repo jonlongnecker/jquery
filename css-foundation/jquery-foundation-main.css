@@ -62,7 +62,7 @@ a,
 	margin-left: -40px;
 	margin-right: -40px;
 	margin-top: -30px;
-	height: 40px;
+	height: auto;
 	color: #007d88;
 	font: 20px/40px Proxima-Nova;
 	letter-spacing: -1px;
@@ -72,39 +72,54 @@ a,
 	margin-top: 30px;
 }
 
-#content h2.slider-haeding {
+#content h2.slider-heading {
 	width: 100%;
 	text-align: center;
 }
 
-#content ul.slider-list {
+.slider {
+	position: relative;
+}
+
+.flexslider {
 	width: 100%;
 	display: block;
-	padding: 15px 25px;
 	border: 1px solid #cbcbcb;
 	margin-left: 0px;
-	height: 96px;
+	height:a;
 	overflow: hidden;
 	border-radius: 10px;
+	list-style: none;
+	padding-top: 10px;
 }
 
-#content .slider-list li {
-	padding-left: 0px;
-	display: block;
-	margin-bottom: 70px;
-}
-
-#content .slider-list li img {
-	float: left;
-	display: inline;
-	width: 140px;
-	margin-right: 40px;
-	margin-left: 40px;
-}
-
-#content .slider-list img.last {
-	margin-right: 0px;
+#content .slides {
 	margin-left: 0px;
+}
+
+.flexslider ol {
+	display: none;
+}
+
+#content .flexslider li {
+	padding-left: 0px;
+	background: none;
+	display: none;
+}
+
+ul.flex-direction-nav {
+	display: none;
+}
+
+#content .flexslider li img {
+	display: inline-block;
+	margin-left: 10%;
+	width: 35%;
+}
+
+#content .flexslider li img.last {
+	margin-right: 0px;
+	
 }
 
 .dark-callout-box {
@@ -147,6 +162,12 @@ a,
 	display: inline;
 	margin-right: 20px;
 	margin-bottom: 10px;
+	width: 22%;
+}
+
+.project-text {
+	float: right;
+	width: 70%;
 }
 
 /*Join Page*/
@@ -507,6 +528,21 @@ nav#main ul {
 			width: 100%;
 			margin-bottom: 30px;
 		}
+		
+		.sub-banner {
+			background-color: #d6eef1;
+			text-align: center;
+			height: auto;
+			color: #007d88;
+			font: 20px/26px Proxima-Nova;
+			letter-spacing: -1px;
+			margin: -30px -40px 0;
+			padding: 2% 10% 0.5%;
+		}
+		
+		.flexslider {
+			margin-bottom: 20px;
+		}
 	
 }
 
@@ -555,7 +591,36 @@ nav#main ul {
 		margin-bottom: 30px;
 	}
 	
+	.sub-banner {
+		margin-left: -25px;
+		margin-right: -25px;
+		padding-top: 3.5%;
+	}
 	
+	.dark-callout-box {
+		background-image: url(../images/dark-grey-tile.png);
+		border-bottom: 10px solid #c1c1c1;
+		border-top: 10px solid #c1c1c1;
+		text-align: center;
+		margin-bottom: 0;
+		padding-right: 22px !important;
+		padding-left: 22px !important;
+	}
+	
+	#content .dark-callout-box h3 {
+		font: bold 28px/32px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		letter-spacing: -1px;
+		color: #fff;
+	}
+	
+	
+	#content .dark-callout-box p {
+		
+		letter-spacing: 0px;
+		color: #dddcdc;
+		font-size: 14px;
+		line-height: 18px;
+	}
 
 }
 

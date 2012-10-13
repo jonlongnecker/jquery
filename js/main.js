@@ -19,4 +19,17 @@ return false;
 $(".enlarge").colorbox({rel:'goodies'});
 
 
+
+<!-- Hook up the FlexSlider -->
+
+	$(window).load(function() {
+		$('.flexslider').flexslider({
+		
+		controlNav: "false"
+		});
+		
+	});
+
+
+
 }); //Close Document Ready
