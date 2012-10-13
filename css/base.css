@@ -1312,7 +1312,8 @@ p.author a {
    ========================================================================== */
 
 a.button,
-#content a.button, .button {
+#content a.button, 
+.button {
 	border-radius: 5px;
 	border: 1px solid #999;
 	-webkit-box-shadow: 
@@ -1330,22 +1331,33 @@ a.button,
 	text-decoration: none;
 	color: #fff !important;
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
-	padding: 5px 12px;
+	padding: 8px 15px;
 	font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
+	background-color: #d18f4f;
+	float: left;
+}
+
+a.button:hover,
+#content a.button:hover,
+.button:hover {
+	background-color: #cc8540;
 }
 
 a.button.large,
-#content a.button.large, button.large {
+#content a.button.large, 
+button.large {
 	font-size: 20px;
+	padding: 12px 20px;
 }
 
 a.button.dark,
-#content a.button.dark, .button.dark {
+#content a.button.dark, 
+.button.dark {
 	background-color: #666;
 }
 

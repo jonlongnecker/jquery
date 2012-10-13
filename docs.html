@@ -45,6 +45,7 @@
 				<li><a href="#bkg">Background &amp; Logos</a></li>
 				<li><a href="#foundation">Foundation</a></li>
 				<li><a href="#images">Images</a></li>
+				<li><a href="#embeds">Embeds</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -199,6 +200,36 @@
 &lt;/figure&gt;</code>
 </pre>
 				</div>	
+				
+				
+			<h1 id="embeds">Embeds</h1>	
+			<p>For an embedded element like a YouTube or Vimeo video, <code>iframe</code> embed, etc.. make sure you wrap in a <code>embed</code> div so that it scales proportionately with media queries.</p>
+			
+			<div class="example">
+				<h3>YouTube Embed</h3>
+					<div class="embed"><iframe width="568" height="319" src="http://www.youtube.com/embed/4D0gyWe5mp4" frameborder="0" allowfullscreen></iframe></div>
+<pre>
+<code>&lt;div class=&quot;embed&quot;&gt;
+  &lt;iframe src=#&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code>
+</pre>
+			</div>
+			
+			
+			<h1 id="Buttons">Buttons</h1>	
+			<p>Styling buttons is as simple as adding a class of <code>button</code>. Other options include <code>dark</code> and <code>large</code>.</p>
+			
+			<div class="example">
+				<h3>Button Styles</h3>
+					<a class="button" href="#">Regular Button</a><br /><br />
+					<a class="button dark" href="#">Dark Button</a><br /><br />
+					<a class="button large" href="#">Large Button</a>
+<pre>
+<code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Regular Button&lt;/a&gt;
+&lt;a class=&quot;button dark&quot; href=&quot;#&quot;&gt;Dark Button&lt;/a&gt;
+&lt;a class=&quot;button large&quot; href=&quot;#&quot;&gt;Large Button&lt;/a&gt;</code>
+</pre>
+						</div>
 		
 	</div><!--End Content-->
 	</div><!--End Content Wrapper-->
