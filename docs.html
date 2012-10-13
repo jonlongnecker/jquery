@@ -46,6 +46,10 @@
 				<li><a href="#foundation">Foundation</a></li>
 				<li><a href="#images">Images</a></li>
 				<li><a href="#embeds">Embeds</a></li>
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#banners">Banners</a></li>
+				<li><a href="#fonts">Fonts</a></li>
+				<li><a href="#grid">Grid</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -223,13 +227,216 @@
 				<h3>Button Styles</h3>
 					<a class="button" href="#">Regular Button</a><br /><br />
 					<a class="button dark" href="#">Dark Button</a><br /><br />
-					<a class="button large" href="#">Large Button</a>
+					<a class="button large" href="#">Large Button</a><br /><br />
 <pre>
 <code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Regular Button&lt;/a&gt;
 &lt;a class=&quot;button dark&quot; href=&quot;#&quot;&gt;Dark Button&lt;/a&gt;
 &lt;a class=&quot;button large&quot; href=&quot;#&quot;&gt;Large Button&lt;/a&gt;</code>
 </pre>
 						</div>
+			
+			<div class="example">
+				<h3>Form Buttons</h3>
+					<input type="submit" value="Submit Button" /><br /><br />
+					<input class="dark" type="submit" value="Dark Submit Button" /><br /><br />
+					<input class="large" type="submit" value="Large Submit Button" /><br /><br />
+<pre>
+<code>&lt;input type=&quot;submit&quot; value=&quot;Submit Button&quot; /&gt;
+&lt;input class=&quot;dark&quot; type=&quot;submit&quot; value=&quot;Dark Submit Button&quot; /&gt;
+&lt;input class=&quot;large&quot; type=&quot;submit&quot; value=&quot;Large Submit Button&quot; /&gt;</code>
+</pre>
+						</div>	
+						
+			<h1 id="typography">Typography</h1>	
+			
+			<p>The main goal of typography is that hopefully you won't need to add a class to an element to style it. There are a few exceptions, but for the most part all major elements are styled. This is what they look like:</p>
+			
+			<div class="example">
+				<h3>Headings</h3>
+				<h1>Heading One Looks Like This</h1>
+				<h2>Heading Two Looks Like This</h2>
+				<h3  class="ignore-example">Heading Three Looks Like This</h3>
+				<h4>Heading Four Looks Like This</h4>
+<pre>
+<code>&lt;h1&gt;Heading One Looks Like This&lt;/h1&gt;
+&lt;h2&gt;Heading Two Looks Like This&lt;/h2&gt;
+&lt;h3&gt;Heading Three Looks Like This&lt;/h3&gt;
+&lt;h4&gt;Heading Four Looks Like This&lt;/h4&gt;</code>
+</pre>
+			</div>
+			
+			<div class="example">
+				<h3>Lists</h3>
+				<ul>
+					<li>Unordered List</li>
+					<li>Looks Like</li>
+					<li>This</li>
+				</ul>
+				
+				<ol>
+					<li>Ordered List</li>
+					<li>Looks Like</li>
+					<li>This</li>
+				</ol>
+<pre>
+<code>&lt;ul&gt;
+  &lt;li&gt;Unordered List&lt;/li&gt;
+  &lt;li&gt;Looks Like&lt;/li&gt;
+  &lt;li&gt;This&lt;/li&gt;
+&lt;/ul&gt;
+				
+&lt;ol&gt;
+  &lt;li&gt;Ordered List&lt;/li&gt;
+  &lt;li&gt;Looks Like&lt;/li&gt;
+  &lt;li&gt;This&lt;/li&gt;
+&lt;/ol&gt;</code>
+</pre>
+			</div>
+			
+			<div class="example">
+				<h3>Basic Elements</h3>
+				<p>Have you ever seen an <strong>orange</strong> up close? It's really bumpy and shiny. Kind of like a <a href="#">martian landscape</a>.</p> 
+				<hr />
+				<p>Oranges are <em>really</em> hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those <code>oranges</code>. They are grand.</p>
+<pre>
+<code>&lt;p&gt;Have you ever seen an &lt;strong&gt;orange&lt;/strong&gt; up close? It's really bumpy and shiny. Kind of like a &lt;a href=&quot;#&quot;&gt;martian landscape&lt;/a&gt;.&lt;/p&gt; 
+&lt;hr /&gt;
+&lt;p&gt;Oranges are &lt;em&gt;really&lt;/em&gt; hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those &lt;code&gt;oranges&lt;/code&gt;. They are grand.&lt;/p&gt;</code>
+</pre>
+			</div>
+			
+			<div class="example">
+				<h3>Blockquotes</h3>
+				<blockquote><p>Go do something awesome today. You'll be glad you did.</p></blockquote>
+<pre>
+<code>&lt;blockquote&gt;&lt;p&gt;Go do something awesome today. You'll be glad you did.&lt;/p&gt;&lt;/blockquote&gt;</code>
+</pre>
+			</div>
+			
+			<div class="example">
+				<h3>Header Block <code>.block</code></h3>
+				<h1 class="block">Header One Block</h1>
+				<p>This gives your header a background and padding. Great for column headings.</p>
+				
+				<h2 class="block">Header Two Block</h2>
+				
+<pre>
+<code>&lt;h1 class=&quot;block&quot;&gt;Header One Block&lt;/h1&gt;
+&lt;p&gt;This gives your header a background and padding. Great for column headings.&lt;/p&gt;
+				
+&lt;h2 class=&quot;block&quot;&gt;Header Two Block&lt;/h2&gt;</code>
+</pre>
+			</div>	
+			
+			<div class="example">
+				<h3>Centered Text - <code>.center-txt</code></h3>
+				<h1 class="center-txt">Header One Centered</h1>
+				<p class="center-txt">This is a paragraph that has been centered. It's great, huh? Use this class to center any text.</p>
+				
+				
+<pre>
+<code>&lt;h1 class=&quot;center-txt&quot;&gt;Header One Centered&lt;/h1&gt;
+&lt;p class=&quot;center-txt&quot;&gt;This is a paragraph that has been centered. It's great, huh? Use this class to center any text.&lt;/p&gt;</code>
+</pre>
+			</div>	
+			
+			<h1 id="banners">Banners</h1>	
+			
+			<div class="example">
+				<h3>Secondary Banner</h3>
+				<div id="banner-secondary">
+					<h1>Banner Header Should Go Here</h1>
+				</div>
+				
+<pre>
+<code>&lt;h3&gt;Secondary Banner&lt;/h3&gt;
+&lt;div id=&quot;banner-secondary&quot;&gt;
+  &lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
+&lt;/div&gt;</code>
+</pre>				
+			</div>
+			
+			<div class="example">
+				<h3>Secondary Banner Large</h3>
+				<div id="banner-secondary" class="large-banner">
+					<h2>Use a H1 or H2 - both work</h2>
+					<p>Secondary Header Can Go Here</p>
+				</div>
+				
+<pre>
+<code>&lt;div id=&quot;banner-secondary&quot; class=&quot;large-banner&quot;&gt;
+  &lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
+  &lt;p&gt;Secondary Header Can Go Here&lt;/p&gt;
+&lt;/div&gt;</code>
+</pre>				
+			</div>	
+			
+			
+			<h1 id="fonts">Fonts</h1>
+			<p>The jQuery sites use 4 typefaces:</p>
+			
+			<div class="example">
+				<h3>Helvetica Neue</h3>
+				<p>Used for body copy throughout the site. Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
+				
+<pre>
+<code>font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, Geneva, sans-serif;</code>
+</pre>				
+			</div>
+			
+						
+			<div class="example">
+				<h3>Proxima Nova</h3>
+				<h2>Use Proxima Nova for Headers</h2>
+				<p>Also for navigation, buttons &amp; actions.</p>
+				
+<pre>
+<code>font-family: Proxima-Nova, &quot;Helvetica Neue&quot;, Arial, Helvetica, Geneva, sans-serif;</code>
+</pre>				
+			</div>
+			
+			
+						
+			<div class="example">
+				<h3>Journal Regular</h3>
+				<h1 style="font-family: 'JournalRegular';">This is a Journal Header</h1>
+				<p>This is used in just a few places - some homepage banners and callouts.</p>
+				
+<pre>
+<code>font-family: &quot;JournalRegular&quot;, Georgia, Times New Roman, Times, serif;</code>
+</pre>				
+			</div>
+			
+			<div class="example">
+				<h3>Font Awesome</h3>
+				<p>Font Awesome lets you add vector icons to just about anything. Use the <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">reference guide</a> to choose the right classes and icons.</p>
+				<p><i class="icon-circle-arrow-right"></i> This is a paragraph with an <code>&lt;i&gt;</code> element.</p>
+				
+				<ul>
+					<li class="icon-exclamation-sign">Oh No!</li>
+					<li class=" icon-barcode">A barcode </li>
+				</ul>
+				
+				<h2><i class="icon-plane"></i> Want to try it on a header?</h2>
+				
+<pre>
+<code>&lt;p&gt;&lt;i class=&quot;icon-circle-arrow-right&quot;&gt;&lt;/i&gt; This is...&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li class=&quot;icon-exclamation-sign&quot;&gt;Oh No!&lt;/li&gt;
+  &lt;li class=&quot; icon-barcode&quot;&gt;A barcode &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;i class=&quot;icon-plane&quot;&gt;&lt;/i&gt; Want to...&lt;/h2&gt;</code>
+</pre>				
+			</div>	
+			
+			<h1 id="grid">Grid</h1>	
+			
+			<p>We are using the Zurb Foundation grid as a basis for the grid. <strong>Please only use this grid inside of the main <a href="#foundation">foundation</a></strong> mentioned above (i.e. in the <code>#content</code> or <code>#sidebar</code>).</p>	
+			
+			<p>We'll have a reference eventually, but for now <a href="http://foundation.zurb.com/docs/grid.php" target="_blank">go here</a> to see how to use the grid.</p>	
+				
 		
 	</div><!--End Content-->
 	</div><!--End Content Wrapper-->

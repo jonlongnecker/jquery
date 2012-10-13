@@ -1300,7 +1300,7 @@ p.author a {
 }
 
 .center-txt {
-	text-align: center;
+	text-align: center !important;
 }
 
 .callout-block {
@@ -1313,7 +1313,8 @@ p.author a {
 
 a.button,
 #content a.button, 
-.button {
+.button,
+input[type="submit"] {
 	border-radius: 5px;
 	border: 1px solid #999;
 	-webkit-box-shadow: 
@@ -1344,25 +1345,30 @@ a.button,
 
 a.button:hover,
 #content a.button:hover,
-.button:hover {
+.button:hover,
+input[type="submit"]:hover {
 	background-color: #cc8540;
 }
 
 a.button.large,
 #content a.button.large, 
-button.large {
+button.large,
+input[type="submit"].large {
 	font-size: 20px;
 	padding: 12px 20px;
 }
 
 a.button.dark,
 #content a.button.dark, 
-.button.dark {
+.button.dark,
+input[type="submit"].dark {
 	background-color: #666;
 }
 
 a.button.dark:hover,
-#content a.button.dark:hover, .button.dark:hover {
+#content a.button.dark:hover,
+.button.dark:hover,
+input[type="submit"].dark:hover {
 	background-color: #424141;
 }
 
