@@ -130,6 +130,13 @@ ul.flex-direction-nav {
 	text-align: center;
 }
 
+.big-message {
+	font: bold 50px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	color: #ffffff !important;
+	margin-top: 20px;
+}
+
 #content .dark-callout-box h3 {
 	font: bold 30px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: -1px;
@@ -435,6 +442,7 @@ a.icon-search::before {
 .donate-page #content .row .callout-block {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 a.button,
@@ -620,6 +628,18 @@ nav#main ul {
 		color: #dddcdc;
 		font-size: 14px;
 		line-height: 18px;
+	}
+	
+	.big-message {
+		font: bold 30px/30px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
+		letter-spacing: -1px;
+		color: #ffffff !important;
+		margin-top: 20px;
+	}
+	
+	.callout-block {
+		padding-right: 20px !important;
+		padding-left: 20px !important;
 	}
 
 }
