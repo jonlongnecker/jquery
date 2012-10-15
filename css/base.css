@@ -983,7 +983,6 @@ body {
 		float: right;
 		margin-right: -40px;
 		position: relative;
-		border-left: 1px;
 		-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
 		-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
@@ -1000,7 +999,7 @@ body {
 		background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
 		width: 29%;
 		border: 0px;
-		border-left: 1px solid #cccccc;
+		border-left: 1px solid #efefef;
 	}
 
 
