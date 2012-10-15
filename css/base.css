@@ -3,6 +3,514 @@
 		  http://jon-mbp.local/~jon/jquery/css/base.css
 		  http://jquerybase.47dev.com/css/base.css
 		  http://nate-mbp.local/~natecroft/jquery/css/base.css */
+		  
+		  
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+	margin: 0 0 0.67em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 0.83em;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 0 0 1em;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 0 0 1.33em;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 0 0 1.67em;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 0 0 2.33em;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 0 0 1em;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+		  
+		  
 
 /* HTML5 Boilerplate styles
    ========================================================================== */
@@ -2264,4 +2772,284 @@ footer li img {
     h3 {
         page-break-after: avoid;
     }
+}
+
+/* @override 
+	http://jon-mbp.local/~jon/jquery/css/grid.css */
+
+/* The Grid ---------------------- 
+Based on Zurb Foundation's Grid
+*/
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* The Grid ---------------------- */
+.row { width: 1240px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -25px; }
+.row.collapse .column, .row.collapse .columns { padding: 0; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -25px; }
+.row .row.collapse { margin: 0; }
+
+.column, .columns { float: left; min-height: 1px; padding: 0 25px; position: relative; }
+.column.centered, .columns.centered { float: none; margin: 0 auto; }
+
+[class*="column"] + [class*="column"]:last-child { float: right; }
+
+[class*="column"] + [class*="column"].end { float: left; }
+
+.one, .row .one { width: 8.33333%; }
+
+.two, .row .two { width: 16.66667%; }
+
+.three, .row .three { width: 25%; }
+
+.four, .row .four { width: 33.33333%; }
+
+.five, .row .five { width: 41.66667%; }
+
+.six, .row .six { width: 50%; }
+
+.seven, .row .seven { width: 58.33333%; }
+
+.eight, .row .eight { width: 66.66667%; }
+
+.nine, .row .nine { width: 75%; }
+
+.ten, .row .ten { width: 83.33333%; }
+
+.eleven, .row .eleven { width: 91.66667%; }
+
+.twelve, .row .twelve { width: 100%; }
+
+.row .offset-by-one { margin-left: 8.33333%; }
+
+.row .offset-by-two { margin-left: 16.66667%; }
+
+.row .offset-by-three { margin-left: 25%; }
+
+.row .offset-by-four { margin-left: 33.33333%; }
+
+.row .offset-by-five { margin-left: 41.66667%; }
+
+.row .offset-by-six { margin-left: 50%; }
+
+.row .offset-by-seven { margin-left: 58.33333%; }
+
+.row .offset-by-eight { margin-left: 66.66667%; }
+
+.row .offset-by-nine { margin-left: 75%; }
+
+.row .offset-by-ten { margin-left: 83.33333%; }
+
+.push-two { left: 16.66667%; }
+
+.pull-two { right: 16.66667%; }
+
+.push-three { left: 25%; }
+
+.pull-three { right: 25%; }
+
+.push-four { left: 33.33333%; }
+
+.pull-four { right: 33.33333%; }
+
+.push-five { left: 41.66667%; }
+
+.pull-five { right: 41.66667%; }
+
+.push-six { left: 50%; }
+
+.pull-six { right: 50%; }
+
+.push-seven { left: 58.33333%; }
+
+.pull-seven { right: 58.33333%; }
+
+.push-eight { left: 66.66667%; }
+
+.pull-eight { right: 66.66667%; }
+
+.push-nine { left: 75%; }
+
+.pull-nine { right: 75%; }
+
+.push-ten { left: 83.33333%; }
+
+.pull-ten { right: 83.33333%; }
+
+img, object, embed { max-width: 100%; height: auto; }
+
+object, embed { height: 100%; }
+
+img { -ms-interpolation-mode: bicubic; }
+
+#map_canvas img, .map_canvas img { max-width: none!important; }
+
+/* Nicolas Gallagher's micro clearfix */
+.row { *zoom: 1; }
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+
+/* Mobile Grid and Overrides ---------------------- */
+@media only screen and (max-width: 767px) {
+  .row { width: auto; min-width: 0; margin-left: 0 !important; margin-right: 0 !important; }
+  .column, .columns { width: auto !important; float: none; padding-left: 0 !important; padding-right: 0 !important;
+  }
+  .column:last-child, .columns:last-child { float: none; }
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  .column:before, .columns:before, .column:after, .columns:after { content: ""; display: table; }
+  .column:after, .columns:after { clear: both; }
+  .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten { margin-left: 0 !important; }
+  .push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten { left: auto; }
+  .pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten { right: auto; }
+  /* Mobile 4-column Grid */
+  .row .mobile-one { width: 25% !important; float: left; padding: 0 25px; }
+  .row .mobile-one:last-child { float: right; }
+  .row .mobile-one.end { float: left; }
+  .row.collapse .mobile-one { padding: 0; }
+  .row .mobile-two { width: 50% !important; float: left; padding: 0 25px; }
+  .row .mobile-two:last-child { float: right; }
+  .row .mobile-two.end { float: left; }
+  .row.collapse .mobile-two { padding: 0; }
+  .row .mobile-three { width: 75% !important; float: left; padding: 0 25px; }
+  .row .mobile-three:last-child { float: right; }
+  .row .mobile-three.end { float: left; }
+  .row.collapse .mobile-three { padding: 0; }
+  .row .mobile-four { width: 100% !important; float: left; padding: 0 25px; }
+  .row .mobile-four:last-child { float: right; }
+  .row .mobile-four.end { float: left; }
+  .row.collapse .mobile-four { padding: 0; }
+  .push-one-mobile { left: 25%; }
+  .pull-one-mobile { right: 25%; }
+  .push-two-mobile { left: 50%; }
+  .pull-two-mobile { right: 50%; }
+  .push-three-mobile { left: 75%; }
+  .pull-three-mobile { right: 75%; } }
+  
+  
+/* Block Grids ---------------------- */
+/* These are 2-up, 3-up, 4-up and 5-up ULs, suited
+for repeating blocks of content. Add 'mobile' to
+them to switch them just like the layout grid
+(one item per line) on phones
+
+For IE7/8 compatibility block-grid items need to be
+the same height. You can optionally uncomment the
+lines below to support arbitrary height, but know
+that IE7/8 do not support :nth-child.
+-------------------------------------------------- */
+.block-grid, #content .block-grid { display: block; overflow: hidden; padding: 0; }
+.block-grid > li, #content .block-grid > li { display: block; height: auto; float: left; }
+.block-grid.one-up, #content .block-grid.one-up { margin: 0; }
+.block-grid.one-up > li, #content .block-grid.one-up > li { width: 100%; padding: 0 0 15px; }
+.block-grid.two-up, #content .block-grid.two-up { margin: 0 -15px; }
+.block-grid.two-up > li, #content .block-grid.two-up > li { width: 50%; padding: 0 15px 15px; }
+.block-grid.two-up > li:nth-child(2n+1), #content .block-grid.two-up > li:nth-child(2n+1) { clear: both; }
+.block-grid.three-up, #content .block-grid.three-up { margin: 0 -12px; }
+.block-grid.three-up > li, #content .block-grid.three-up > li { width: 33.33%; padding: 0 12px 12px; }
+.block-grid.three-up > li:nth-child(3n+1), #content .block-grid.three-up > li:nth-child(3n+1) { clear: both; }
+.block-grid.four-up, #content .block-grid.four-up { margin: 0 -10px; }
+.block-grid.four-up > li, #content .block-grid.four-up > li { width: 25%; padding: 0 10px 10px; }
+.block-grid.four-up > li:nth-child(4n+1), #content .block-grid.four-up > li:nth-child(4n+1) { clear: both; }
+.block-grid.five-up, #content .block-grid.five-up { margin: 0 -8px; }
+.block-grid.five-up > li, #content .block-grid.five-up > li { width: 20%; padding: 0 8px 8px; }
+.block-grid.five-up > li:nth-child(5n+1), #content .block-grid.five-up > li:nth-child(5n+1) { clear: both; }
+
+/* Mobile Block Grids */
+@media only screen and (max-width: 767px) { 
+  .block-grid.mobile > li { float: none !important; width: 100% !important; margin-left: 0 !important; }
+  .block-grid > li { clear: none !important; }
+  .block-grid.mobile-two-up > li { width: 50% !important; }
+  .block-grid.mobile-two-up > li:nth-child(2n+1) { clear: both; }
+  .block-grid.mobile-three-up > li { width: 33.33% !important; }
+  .block-grid.mobile-three-up > li:nth-child(3n+1) { clear: both !important; }
+  .block-grid.mobile-four-up > li { width: 25% !important; }
+  .block-grid.mobile-four-up > li:nth-child(4n+1) { clear: both; }
+  .block-grid.mobile-five-up > li:nth-child(5n+1) { clear: both; } }
+
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(images/overlay.png) repeat 0 0;}
+#colorbox{}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+  Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
+*/
+.cboxIE6 #cboxTopLeft{background:url(images/ie6/borderTopLeft.png);}
+.cboxIE6 #cboxTopCenter{background:url(images/ie6/borderTopCenter.png);}
+.cboxIE6 #cboxTopRight{background:url(images/ie6/borderTopRight.png);}
+.cboxIE6 #cboxBottomLeft{background:url(images/ie6/borderBottomLeft.png);}
+.cboxIE6 #cboxBottomCenter{background:url(images/ie6/borderBottomCenter.png);}
+.cboxIE6 #cboxBottomRight{background:url(images/ie6/borderBottomRight.png);}
+.cboxIE6 #cboxMiddleLeft{background:url(images/ie6/borderMiddleLeft.png);}
+.cboxIE6 #cboxMiddleRight{background:url(images/ie6/borderMiddleRight.png);}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
 }
