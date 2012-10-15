@@ -167,14 +167,20 @@ ul.flex-direction-nav {
 .project img {
 	float: left;
 	display: inline;
-	margin-right: 20px;
-	margin-bottom: 10px;
 	width: 22%;
+}
+
+.twelve .project img {
+	width: 10%;
 }
 
 .project-text {
 	float: right;
 	width: 70%;
+}
+
+.twelve .project-text {
+	width: 85.5%;
 }
 
 /*Join Page*/
@@ -551,6 +557,15 @@ nav#main ul {
 		.flexslider {
 			margin-bottom: 20px;
 		}
+		
+		
+		.twelve .project img {
+			width: 22%;
+		}
+		
+		.twelve .project-text {
+			width: 70%;
+		}
 	
 }
 
@@ -640,6 +655,14 @@ nav#main ul {
 	.callout-block {
 		padding-right: 20px !important;
 		padding-left: 20px !important;
+	}
+	
+	.twelve .project img {
+		width: 22%;
+	}
+	
+	.twelve .project-text {
+		width: 70%;
 	}
 
 }
