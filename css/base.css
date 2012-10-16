@@ -1815,6 +1815,33 @@ p.author a {
 	padding: 20px;
 }
 
+.dark-callout-box {
+	background-image: url(../images/dark-grey-tile.png);
+	margin-bottom: 30px;
+	border-bottom: 10px solid #c1c1c1;
+	border-top: 10px solid #c1c1c1;
+	text-align: center;
+}
+
+.big-message {
+	font: bold 50px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	color: #ffffff !important;
+	margin-top: 20px;
+}
+
+#content .dark-callout-box h3 {
+	font: bold 30px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+
+#content .dark-callout-box p {
+	letter-spacing: 0px;
+	color: #dddcdc;
+}
+
 /* Buttons
    ========================================================================== */
 
