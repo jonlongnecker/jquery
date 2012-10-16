@@ -12,3 +12,5 @@ jquery.esproj
 *.espressostorage
 
 *.espressostorage
+
+.DS_Store
