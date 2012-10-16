@@ -1594,7 +1594,7 @@ hr {
 }
 
 pre, code {
-	font: 15px/18px "Courier New", Courier, mono;
+	font: 15px/18px "source-code-pro", "Courier New", Courier, mono;
 	word-spacing: 0;
 }
 
@@ -1619,7 +1619,6 @@ pre code {
 	background-color: transparent;
 	text-shadow: 0 -1px 0 #000000;
 	font-size: 16px;
-	font-weight: bold;
 }
 
 #content code a {
