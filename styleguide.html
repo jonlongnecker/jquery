@@ -30,9 +30,9 @@
 			<h3>Identity Framework</h3>
 		</div>
     </header>
-<!--End Header =================================================================-->
-
-
+<!--End Header =================================================================-->	
+        
+        
 <div id="container" class="clearfix">
 <div id="content-wrapper" class="clearfix">
 	<div id="sidebar">
@@ -54,7 +54,7 @@
 	<div id="content">
 		<h1 id="intro">Intro</h1>
 		<p>The jQuery sites are built with a number of existing libraries and pieces of code. The list below will attempt to catalog the most important ones:</p>
-
+		
 		<ul>
 			<li><a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
 			<li><a href="http://modernizr.com" target="_blank">Modernizr</a></li>
@@ -64,10 +64,10 @@
 			<li><a href="https://typekit.com" target="_blank">TypeKit</a></li>
 			<li><a href="http://alexgorbatchev.com/SyntaxHighlighter/" target="_blank">SyntaxHighligher</a></li>
 		</ul>
-
+		
 		<h1 id="bkg">Background &amp; Logos</h1>
 		<p>The background colors and logos are set in the <code>base.css</code> file of the parent theme and are triggered by <code>id</code>'s on the <code>body</code>. Unless you're setting up a site with a new color scheme and logo you should just need to use one of the following <code>id</code>'s.</p>
-
+		
 		<ul>
 			<li><strong>jQuery</strong>: No ID needed. <em>(blue)</em></li>
 			<li><strong>jQuery UI</strong>: <code>#body-jquery-ui</code> <em>(orange)</em></li>
@@ -76,13 +76,13 @@
 			<li><strong>Qunit Js</strong>: <code>#body-qunitjs</code> <em>(forest green)</em></li>
 			<li><strong>jQuery Foundation</strong>: <code>#body-jquery-foundation</code> <em>(aqua)</em></li>
 		</ul>
-
+		
 		<p>If you are adding a site with a new logo/color scheme, please add to  <code>base.css</code> Don't forget the retina version of the logo and the media query to toggle it based on pixel density.</p>
-
+		
 		<p>Other colors (like headers, buttons &amp; links) and layout specific to the site will be in the <code>style.css</code>of that site's theme.</p>
-
+		
 		<h1 id="foundation">Foundation</h1>
-
+		
 		<p>Please use this basic foundation for all pages.</p>
 		<ul>
 			<li>The <code>#container</code> sets the background color and provides padding around the white content area.</li>
@@ -90,16 +90,16 @@
 			<li>The <code>#content</code> should be used for the main content column.</li>
 			<li>The <code>#sidebar</code> should be used for the secondary column or sidebar.</li>
 		</ul>
-
+		
 <pre>
 <code>&lt;body&gt;
   &lt;header&gt;
     Header (Global Nav, Logo and Main Nav)
-  &lt;/header&gt;
-  &lt;div id="container"&gt;
+  &lt;/header&gt;			
+  &lt;div id="container"&gt;	        	
     &lt;div id="content-wrapper" class="clearfix"&gt;
       &lt;div id="content"&gt;
-        Content goes here
+        Content goes here	 
       &lt;/div&gt;
       &lt;div id="sidebar"&gt;
         Sidebar Here
@@ -108,47 +108,47 @@
   &lt;/div&gt; &lt;!--End Container--&gt;
 &lt;/body&gt; </code>
 </pre>
-
+		
 		<h2>Layout Options</h2>
-
+		
 		<p>You can easily customize different layouts for <code>#content</code>.</p>
-
+		
 		<div class="row">
 			<div class="four columns">
 			<figure class="full noborder">
 				<img class="full noborder" src="images/docs/layout-sidebar-right.gif" alt="Content Right" />
 				<figcaption><em>This is the default</em></figcaption>
-			</figure>
+			</figure>	
 			</div>
-
+			
 			<div class="four columns">
 			<figure class="full noborder">
 				<img class="full noborder" src="images/docs/layout-sidebar-none.gif" alt="Content Ful" />
 				<figcaption><code>body.content-full</code></figcaption>
-			</figure>
+			</figure>	
 			</div>
-
+			
 			<div class="four columns">
 			<figure class="full noborder">
 				<img class="full noborder" src="images/docs/layout-sidebar-left.gif" alt="Content Left" />
 				<figcaption><code>body.content-right</code></figcaption>
-			</figure>
+			</figure>	
 			</div>
 		</div>
-
+		
 		<div class="row">
 			<div class="four columns centered">
 			<figure class="full noborder">
 				<img class="full noborder" src="images/docs/layout-sidebar-none-full.gif" alt="Content Full" />
 				<figcaption><code>body.content-full.full-width</code></figcaption>
-			</figure>
+			</figure>	
 			</div>
 		</div>
-
+		
 		<h1 id="images">Images</h1>
-
+		
 		<p>Images can be floated and given captions very easily.</p>
-
+		
 		<div class="example">
 				<h3>Image Full</h3>
 					<p><img src="images/dummy-blog.jpg" alt="#" class="full"/>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
@@ -156,7 +156,7 @@
 <code>&lt;img src=&quot;#&quot; class=&quot;full&quot;/&gt;</code>
 </pre>
 				</div>
-
+		
 		<div class="example">
 				<h3>Image Floated Left</h3>
 					<p><img src="images/dummy-blog.jpg" alt="#" width="300" class="left"/>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
@@ -164,7 +164,7 @@
 <code>&lt;img src=&quot;#&quot; class=&quot;left&quot;/&gt;</code>
 </pre>
 				</div>
-
+		
 		<div class="example">
 		<h3>Image Floated Right</h3>
 			<p><img src="images/dummy-blog.jpg" alt="#" width="300" class="right"/>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
@@ -172,41 +172,41 @@
 <code>&lt;img src=&quot;#&quot; class=&quot;right&quot;/&gt;</code>
 </pre>
 		</div>
-
+		
 		<div class="example">
 				<h3>Image with Caption</h3>
-					<p><figure class="left">
+					<p><figure class="left">					
 						<img class="left" src="images/dummy-blog.jpg" width="300" alt="test">
-
+						
 						<figcaption>Hey look a figcaption!</figcaption>
 					</figure>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
 <pre>
-<code>&lt;figure class=&quot;left&quot;&gt;
+<code>&lt;figure class=&quot;left&quot;&gt;					
   &lt;img class=&quot;left&quot; src=&quot;#&quot; &gt;
   &lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
 &lt;/figure&gt;</code>
 </pre>
 				</div>
-
+				
 			<div class="example">
 				<h3>Image with Caption &amp; No Border</h3>
-					<p><figure class="left noborder">
+					<p><figure class="left noborder">					
 						<img class="left noborder" src="images/dummy-blog.jpg" width="300" alt="test">
-
+						
 						<figcaption>Hey look a figcaption!</figcaption>
 					</figure>Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
 <pre>
-<code>&lt;figure class=&quot;left noborder&quot;&gt;
+<code>&lt;figure class=&quot;left noborder&quot;&gt;					
   &lt;img class=&quot;left noborder&quot; src=&quot;#&quot;&gt;
   &lt;figcaption&gt;Hey look a figcaption!&lt;/figcaption&gt;
 &lt;/figure&gt;</code>
 </pre>
-				</div>
-
-
-			<h1 id="embeds">Embeds</h1>
+				</div>	
+				
+				
+			<h1 id="embeds">Embeds</h1>	
 			<p>For an embedded element like a YouTube or Vimeo video, <code>iframe</code> embed, etc.. make sure you wrap in a <code>embed</code> div so that it scales proportionately with media queries.</p>
-
+			
 			<div class="example">
 				<h3>YouTube Embed</h3>
 					<div class="embed"><iframe width="568" height="319" src="http://www.youtube.com/embed/4D0gyWe5mp4" frameborder="0" allowfullscreen></iframe></div>
@@ -216,11 +216,11 @@
 &lt;/div&gt;</code>
 </pre>
 			</div>
-
-
-			<h1 id="Buttons">Buttons</h1>
+			
+			
+			<h1 id="Buttons">Buttons</h1>	
 			<p>Styling buttons is as simple as adding a class of <code>button</code>. Other options include <code>dark</code> and <code>large</code>.</p>
-
+			
 			<div class="example">
 				<h3>Button Styles</h3>
 					<a class="button" href="#">Regular Button</a><br /><br />
@@ -232,7 +232,7 @@
 &lt;a class=&quot;button large&quot; href=&quot;#&quot;&gt;Large Button&lt;/a&gt;</code>
 </pre>
 						</div>
-
+			
 			<div class="example">
 				<h3>Form Buttons</h3>
 					<input type="submit" value="Submit Button" /><br /><br />
@@ -243,12 +243,12 @@
 &lt;input class=&quot;dark&quot; type=&quot;submit&quot; value=&quot;Dark Submit Button&quot; /&gt;
 &lt;input class=&quot;large&quot; type=&quot;submit&quot; value=&quot;Large Submit Button&quot; /&gt;</code>
 </pre>
-						</div>
-
-			<h1 id="typography">Typography</h1>
-
+						</div>	
+						
+			<h1 id="typography">Typography</h1>	
+			
 			<p>The main goal of typography is that hopefully you won't need to add a class to an element to style it. There are a few exceptions, but for the most part all major elements are styled. This is what they look like:</p>
-
+			
 			<div class="example">
 				<h3>Headings</h3>
 				<h1>Heading One Looks Like This</h1>
@@ -262,7 +262,7 @@
 &lt;h4&gt;Heading Four Looks Like This&lt;/h4&gt;</code>
 </pre>
 			</div>
-
+			
 			<div class="example">
 				<h3>Lists</h3>
 				<ul>
@@ -270,7 +270,7 @@
 					<li>Looks Like</li>
 					<li>This</li>
 				</ul>
-
+				
 				<ol>
 					<li>Ordered List</li>
 					<li>Looks Like</li>
@@ -282,7 +282,7 @@
   &lt;li&gt;Looks Like&lt;/li&gt;
   &lt;li&gt;This&lt;/li&gt;
 &lt;/ul&gt;
-
+				
 &lt;ol&gt;
   &lt;li&gt;Ordered List&lt;/li&gt;
   &lt;li&gt;Looks Like&lt;/li&gt;
@@ -290,19 +290,19 @@
 &lt;/ol&gt;</code>
 </pre>
 			</div>
-
+			
 			<div class="example">
 				<h3>Basic Elements</h3>
-				<p>Have you ever seen an <strong>orange</strong> up close? It's really bumpy and shiny. Kind of like a <a href="#">martian landscape</a>.</p>
+				<p>Have you ever seen an <strong>orange</strong> up close? It's really bumpy and shiny. Kind of like a <a href="#">martian landscape</a>.</p> 
 				<hr />
 				<p>Oranges are <em>really</em> hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those <code>oranges</code>. They are grand.</p>
 <pre>
-<code>&lt;p&gt;Have you ever seen an &lt;strong&gt;orange&lt;/strong&gt; up close? It's really bumpy and shiny. Kind of like a &lt;a href=&quot;#&quot;&gt;martian landscape&lt;/a&gt;.&lt;/p&gt;
+<code>&lt;p&gt;Have you ever seen an &lt;strong&gt;orange&lt;/strong&gt; up close? It's really bumpy and shiny. Kind of like a &lt;a href=&quot;#&quot;&gt;martian landscape&lt;/a&gt;.&lt;/p&gt; 
 &lt;hr /&gt;
 &lt;p&gt;Oranges are &lt;em&gt;really&lt;/em&gt; hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those &lt;code&gt;oranges&lt;/code&gt;. They are grand.&lt;/p&gt;</code>
 </pre>
 			</div>
-
+			
 			<div class="example">
 				<h3>Blockquotes</h3>
 				<blockquote><p>Go do something awesome today. You'll be glad you did.</p></blockquote>
@@ -310,113 +310,113 @@
 <code>&lt;blockquote&gt;&lt;p&gt;Go do something awesome today. You'll be glad you did.&lt;/p&gt;&lt;/blockquote&gt;</code>
 </pre>
 			</div>
-
+			
 			<div class="example">
 				<h3>Header Block <code>.block</code></h3>
 				<h1 class="block">Header One Block</h1>
 				<p>This gives your header a background and padding. Great for column headings.</p>
-
+				
 				<h2 class="block">Header Two Block</h2>
-
+				
 <pre>
 <code>&lt;h1 class=&quot;block&quot;&gt;Header One Block&lt;/h1&gt;
 &lt;p&gt;This gives your header a background and padding. Great for column headings.&lt;/p&gt;
-
+				
 &lt;h2 class=&quot;block&quot;&gt;Header Two Block&lt;/h2&gt;</code>
 </pre>
-			</div>
-
+			</div>	
+			
 			<div class="example">
 				<h3>Centered Text - <code>.center-txt</code></h3>
 				<h1 class="center-txt">Header One Centered</h1>
 				<p class="center-txt">This is a paragraph that has been centered. It's great, huh? Use this class to center any text.</p>
-
-
+				
+				
 <pre>
 <code>&lt;h1 class=&quot;center-txt&quot;&gt;Header One Centered&lt;/h1&gt;
 &lt;p class=&quot;center-txt&quot;&gt;This is a paragraph that has been centered. It's great, huh? Use this class to center any text.&lt;/p&gt;</code>
 </pre>
-			</div>
-
-			<h1 id="banners">Banners</h1>
-
+			</div>	
+			
+			<h1 id="banners">Banners</h1>	
+			
 			<div class="example">
 				<h3>Secondary Banner</h3>
 				<div id="banner-secondary">
 					<h1>Banner Header Should Go Here</h1>
 				</div>
-
+				
 <pre>
 <code>&lt;h3&gt;Secondary Banner&lt;/h3&gt;
 &lt;div id=&quot;banner-secondary&quot;&gt;
   &lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
 &lt;/div&gt;</code>
-</pre>
+</pre>				
 			</div>
-
+			
 			<div class="example">
 				<h3>Secondary Banner Large</h3>
 				<div id="banner-secondary" class="large-banner">
 					<h2>Use a H1 or H2 - both work</h2>
 					<p>Secondary Header Can Go Here</p>
 				</div>
-
+				
 <pre>
 <code>&lt;div id=&quot;banner-secondary&quot; class=&quot;large-banner&quot;&gt;
   &lt;h1&gt;Banner Header Should Go Here&lt;/h1&gt;
   &lt;p&gt;Secondary Header Can Go Here&lt;/p&gt;
 &lt;/div&gt;</code>
-</pre>
-			</div>
-
-
+</pre>				
+			</div>	
+			
+			
 			<h1 id="fonts">Fonts</h1>
 			<p>The jQuery sites use 4 typefaces:</p>
-
+			
 			<div class="example">
 				<h3>Helvetica Neue</h3>
 				<p>Used for body copy throughout the site. Have you ever seen an orange up close? It's really bumpy and shiny. Kind of like a martian landscape. Oranges are really hard to get open, too. And if you do manage to peel the skin off, your fingers will smell like oranges for at least 3 hours. Oh, those oranges. They are grand.</p>
-
+				
 <pre>
 <code>font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, Geneva, sans-serif;</code>
-</pre>
+</pre>				
 			</div>
-
-
+			
+						
 			<div class="example">
 				<h3>Proxima Nova</h3>
 				<h2>Use Proxima Nova for Headers</h2>
 				<p>Also for navigation, buttons &amp; actions.</p>
-
+				
 <pre>
 <code>font-family: Proxima-Nova, &quot;Helvetica Neue&quot;, Arial, Helvetica, Geneva, sans-serif;</code>
-</pre>
+</pre>				
 			</div>
-
-
-
+			
+			
+						
 			<div class="example">
 				<h3>Journal Regular</h3>
 				<h1 style="font-family: 'JournalRegular';">This is a Journal Header</h1>
 				<p>This is used in just a few places - some homepage banners and callouts.</p>
-
+				
 <pre>
 <code>font-family: &quot;JournalRegular&quot;, Georgia, Times New Roman, Times, serif;</code>
-</pre>
+</pre>				
 			</div>
-
+			
 			<div class="example">
 				<h3>Font Awesome</h3>
 				<p>Font Awesome lets you add vector icons to just about anything. Use the <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">reference guide</a> to choose the right classes and icons.</p>
 				<p><i class="icon-circle-arrow-right"></i> This is a paragraph with an <code>&lt;i&gt;</code> element.</p>
-
+				
 				<ul>
 					<li class="icon-exclamation-sign">Oh No!</li>
 					<li class=" icon-barcode">A barcode </li>
 				</ul>
-
+				
 				<h2><i class="icon-plane"></i> Want to try it on a header?</h2>
-
+				
 <pre>
 <code>&lt;p&gt;&lt;i class=&quot;icon-circle-arrow-right&quot;&gt;&lt;/i&gt; This is...&lt;/p&gt;
 
@@ -426,24 +426,24 @@
 &lt;/ul&gt;
 
 &lt;h2&gt;&lt;i class=&quot;icon-plane&quot;&gt;&lt;/i&gt; Want to...&lt;/h2&gt;</code>
-</pre>
-			</div>
-
-			<h1 id="grid">Grid</h1>
-
-			<p>We are using the Zurb Foundation grid as a basis for the grid. <strong>Please only use this grid inside of the main <a href="#foundation">foundation</a></strong> mentioned above (i.e. in the <code>#content</code> or <code>#sidebar</code>).</p>
-
-			<p>We'll have a reference eventually, but for now <a href="http://foundation.zurb.com/docs/grid.php" target="_blank">go here</a> to see how to use the grid.</p>
-
-
+</pre>				
+			</div>	
+			
+			<h1 id="grid">Grid</h1>	
+			
+			<p>We are using the Zurb Foundation grid as a basis for the grid. <strong>Please only use this grid inside of the main <a href="#foundation">foundation</a></strong> mentioned above (i.e. in the <code>#content</code> or <code>#sidebar</code>).</p>	
+			
+			<p>We'll have a reference eventually, but for now <a href="http://foundation.zurb.com/docs/grid.php" target="_blank">go here</a> to see how to use the grid.</p>	
+				
+		
 	</div><!--End Content-->
 	</div><!--End Content Wrapper-->
 </div><!--End Container-->
 
 
-
-
-
+        	       		
+       		
+	       
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
@@ -451,6 +451,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-
+        
     </body>
 </html>
