@@ -428,6 +428,132 @@
 &lt;h2&gt;&lt;i class=&quot;icon-plane&quot;&gt;&lt;/i&gt; Want to...&lt;/h2&gt;</code>
 </pre>				
 			</div>	
+
+			<div class="example">
+				<h3>Forms</h3>
+
+				<h4>Top aligned labels</h4>
+				<form class="top-labels">
+					<label for="name">
+						Name
+						<input type="text" placeholder="Your Name" name="name"/>
+					</label>
+					<label for="website">
+						Your website
+						<input type="text" placeholder="http://" name="website" />
+					</label>
+					<label for="message">
+						Message
+						<textarea name="message" placeholder="Your message"></textarea>
+					</label>
+
+					<fieldset class="radio">
+						<label for="notifications"><span><strong>Notifications</strong></span></label>
+						<ul>
+							<li><label><input type="radio" name="notifications"> Send me email</label></li>
+							<li><label><input type="radio" name="notifications"> Don't send me email</label></li>
+						</ul>
+					</fieldset>
+
+					<label for="remember"><input type="checkbox" name="remember"> Remember me</label>
+
+					<input type="submit" value="Submit" />
+				</form>
+
+				<pre>
+					<code>
+&lt;form class=&quot;top-labels&quot;&gt;
+	&lt;label for=&quot;name&quot;&gt;
+		Name
+		&lt;input type=&quot;text&quot; placeholder=&quot;Your Name&quot; name=&quot;name&quot;/&gt;
+	&lt;/label&gt;
+	&lt;label for=&quot;website&quot;&gt;
+		Your website
+		&lt;input type=&quot;text&quot; placeholder=&quot;http://&quot; name=&quot;website&quot; /&gt;
+	&lt;/label&gt;
+	&lt;label for=&quot;message&quot;&gt;
+		Message
+		&lt;textarea name=&quot;message&quot; placeholder=&quot;Your message&quot;&gt;&lt;/textarea&gt;
+	&lt;/label&gt;
+
+	&lt;fieldset class=&quot;radio&quot;&gt;
+		&lt;label for=&quot;notifications&quot;&gt;&lt;span&gt;&lt;strong&gt;Notifications&lt;/strong&gt;&lt;/span&gt;&lt;/label&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;notifications&quot;&gt; Send me email&lt;/label&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;notifications&quot;&gt; Don&#039;t send me email&lt;/label&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/fieldset&gt;
+
+	&lt;label for=&quot;remember&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;remember&quot;&gt; Remember me&lt;/label&gt;
+
+	&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+				<hr />
+				<h4>Left aligned labels</h4>
+
+				<form class="left-labels">
+					<label for="name">
+						<span>Name</span>
+						<input type="text" placeholder="Your Name" name="name"/>
+					</label>
+					<label for="website">
+						<span>Your website</span>
+						<input type="text" placeholder="http://" name="website" />
+					</label>
+					<label for="message">
+						<span>Message</span>
+						<textarea name="message" placeholder="Your message"></textarea>
+					</label>
+
+					<fieldset class="radio">
+						<label for="notifications"><span>Notifications</span></label>
+						<ul>
+							<li><label><input type="radio" name="notifications"> Send me email</label></li>
+							<li><label><input type="radio" name="notifications"> Don't send me email</label></li>
+						</ul>
+					</fieldset>
+
+					<label for="remember"><span>Remember</span>
+					<input type="checkbox" name="remember"> Remember me</label>
+
+					<input type="submit" value="Submit" />
+				</form>
+
+				<pre>
+					<code>
+&lt;form class=&quot;left-labels&quot;&gt;
+	&lt;label for=&quot;name&quot;&gt;
+		&lt;span&gt;Name&lt;/span&gt;
+		&lt;input type=&quot;text&quot; placeholder=&quot;Your Name&quot; name=&quot;name&quot;/&gt;
+	&lt;/label&gt;
+	&lt;label for=&quot;website&quot;&gt;
+		&lt;span&gt;Your website&lt;/span&gt;
+		&lt;input type=&quot;text&quot; placeholder=&quot;http://&quot; name=&quot;website&quot; /&gt;
+	&lt;/label&gt;
+	&lt;label for=&quot;message&quot;&gt;
+		&lt;span&gt;Message&lt;/span&gt;
+		&lt;textarea name=&quot;message&quot; placeholder=&quot;Your message&quot;&gt;&lt;/textarea&gt;
+	&lt;/label&gt;
+
+	&lt;fieldset class=&quot;radio&quot;&gt;
+		&lt;label for=&quot;notifications&quot;&gt;&lt;span&gt;Notifications&lt;/span&gt;&lt;/label&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;notifications&quot;&gt; Send me email&lt;/label&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;notifications&quot;&gt; Don&#039;t send me email&lt;/label&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/fieldset&gt;
+
+	&lt;label for=&quot;remember&quot;&gt;&lt;span&gt;Remember&lt;/span&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;remember&quot;&gt; Remember me&lt;/label&gt;
+
+	&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+
+			</div>
 			
 			<h1 id="grid">Grid</h1>	
 			
